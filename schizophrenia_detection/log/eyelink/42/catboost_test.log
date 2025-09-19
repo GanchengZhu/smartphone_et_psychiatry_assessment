@@ -1,0 +1,96 @@
+2025-07-15 17:23:10 - __main__ - INFO - Starting training process for catboost
+2025-07-15 17:23:10 - __main__ - INFO - Data source: eyelink
+2025-07-15 17:23:10 - __main__ - INFO - Initialized classifier: CatBoostClassifier
+2025-07-15 17:23:10 - __main__ - INFO - Load best hyperparameters from results/train/eyelink/42/catboost/best_params.json
+2025-07-15 17:23:12 - __main__ - INFO - Fold 1 completed
+2025-07-15 17:23:13 - __main__ - INFO - Fold 2 completed
+2025-07-15 17:23:14 - __main__ - INFO - Fold 3 completed
+2025-07-15 17:23:14 - __main__ - INFO - Fold 4 completed
+2025-07-15 17:23:14 - __main__ - INFO - Fold 5 completed
+2025-07-15 17:23:14 - __main__ - INFO - Fold 6 completed
+2025-07-15 17:23:15 - __main__ - INFO - Fold 7 completed
+2025-07-15 17:23:15 - __main__ - INFO - Fold 8 completed
+2025-07-15 17:23:16 - __main__ - INFO - Fold 9 completed
+2025-07-15 17:23:16 - __main__ - INFO - Fold 10 completed
+2025-07-15 17:23:16 - __main__ - INFO - Saved CV results to results/test/eyelink/42\catboost/k_fold.csv
+2025-07-15 17:23:16 - __main__ - INFO - Testing completed successfully
+2025-07-21 11:28:24 - __main__ - INFO - Starting training process for catboost
+2025-07-21 11:28:24 - __main__ - INFO - Data source: eyelink
+2025-07-21 11:28:24 - __main__ - INFO - Initialized classifier: CatBoostClassifier
+2025-07-21 11:28:24 - __main__ - INFO - Load best hyperparameters from results/train/eyelink/42/catboost/best_params.json
+2025-07-21 11:28:25 - __main__ - INFO - Fold 1 completed
+2025-07-21 11:28:25 - __main__ - INFO - Fold 2 completed
+2025-07-21 11:28:26 - __main__ - INFO - Fold 3 completed
+2025-07-21 11:28:27 - __main__ - INFO - Fold 4 completed
+2025-07-21 11:28:28 - __main__ - INFO - Fold 5 completed
+2025-07-21 11:28:29 - __main__ - INFO - Fold 6 completed
+2025-07-21 11:28:30 - __main__ - INFO - Fold 7 completed
+2025-07-21 11:28:31 - __main__ - INFO - Fold 8 completed
+2025-07-21 11:28:31 - __main__ - INFO - Fold 9 completed
+2025-07-21 11:28:32 - __main__ - INFO - Fold 10 completed
+2025-07-21 11:28:32 - __main__ - INFO - Saved CV results to results/test/eyelink/42\catboost/k_fold.csv
+2025-07-21 11:28:32 - __main__ - INFO - Testing completed successfully
+2025-07-30 17:24:00 - __main__ - INFO - Starting training process for catboost
+2025-07-30 17:24:00 - __main__ - INFO - Data source: eyelink
+2025-07-30 17:24:00 - __main__ - INFO - Initialized classifier: CatBoostClassifier
+2025-07-30 17:24:00 - __main__ - INFO - Load best hyperparameters from results_rm/train/eyelink/42/catboost/best_params.json
+2025-07-30 17:24:01 - __main__ - INFO - Fold 1 completed
+2025-07-30 17:24:03 - __main__ - INFO - Fold 2 completed
+2025-07-30 17:24:05 - __main__ - INFO - Fold 3 completed
+2025-07-30 17:24:06 - __main__ - INFO - Fold 4 completed
+2025-07-30 17:24:08 - __main__ - INFO - Fold 5 completed
+2025-07-30 17:24:09 - __main__ - INFO - Fold 6 completed
+2025-07-30 17:24:10 - __main__ - INFO - Fold 7 completed
+2025-07-30 17:24:11 - __main__ - INFO - Fold 8 completed
+2025-07-30 17:24:12 - __main__ - INFO - Fold 9 completed
+2025-07-30 17:24:13 - __main__ - INFO - Fold 10 completed
+2025-07-30 17:24:13 - __main__ - INFO - Saved CV results to results_rm/test/eyelink/42\catboost/k_fold.csv
+2025-07-30 17:24:13 - __main__ - INFO - Testing completed successfully
+2025-07-31 08:46:55 - __main__ - INFO - Starting training process for catboost
+2025-07-31 08:46:55 - __main__ - INFO - Data source: eyelink
+2025-07-31 08:46:55 - __main__ - INFO - Initialized classifier: CatBoostClassifier
+2025-07-31 08:46:55 - __main__ - INFO - Load best hyperparameters from results_rm/train/eyelink/42/catboost/best_params.json
+2025-07-31 08:46:56 - __main__ - INFO - Fold 1 completed
+2025-07-31 08:46:57 - __main__ - INFO - Fold 2 completed
+2025-07-31 08:46:58 - __main__ - INFO - Fold 3 completed
+2025-07-31 08:46:59 - __main__ - INFO - Fold 4 completed
+2025-07-31 08:47:00 - __main__ - INFO - Fold 5 completed
+2025-07-31 08:47:01 - __main__ - INFO - Fold 6 completed
+2025-07-31 08:47:02 - __main__ - INFO - Fold 7 completed
+2025-07-31 08:47:03 - __main__ - INFO - Fold 8 completed
+2025-07-31 08:47:04 - __main__ - INFO - Fold 9 completed
+2025-07-31 08:47:05 - __main__ - INFO - Fold 10 completed
+2025-07-31 08:47:05 - __main__ - INFO - Saved CV results to results_rm/test/eyelink/42\catboost/k_fold.csv
+2025-07-31 08:47:05 - __main__ - INFO - Testing completed successfully
+2025-07-31 09:21:14 - __main__ - INFO - Starting training process for catboost
+2025-07-31 09:21:14 - __main__ - INFO - Data source: eyelink
+2025-07-31 09:21:14 - __main__ - INFO - Initialized classifier: CatBoostClassifier
+2025-07-31 09:21:14 - __main__ - INFO - Load best hyperparameters from results_rm/train/eyelink/42/catboost/best_params.json
+2025-07-31 09:21:14 - __main__ - INFO - Fold 1 completed
+2025-07-31 09:21:14 - __main__ - INFO - Fold 2 completed
+2025-07-31 09:21:14 - __main__ - INFO - Fold 3 completed
+2025-07-31 09:21:14 - __main__ - INFO - Fold 4 completed
+2025-07-31 09:21:14 - __main__ - INFO - Fold 5 completed
+2025-07-31 09:21:15 - __main__ - INFO - Fold 6 completed
+2025-07-31 09:21:15 - __main__ - INFO - Fold 7 completed
+2025-07-31 09:21:15 - __main__ - INFO - Fold 8 completed
+2025-07-31 09:21:15 - __main__ - INFO - Fold 9 completed
+2025-07-31 09:21:15 - __main__ - INFO - Fold 10 completed
+2025-07-31 09:21:15 - __main__ - INFO - Saved CV results to results_rm/test/eyelink/42\catboost/k_fold.csv
+2025-07-31 09:21:15 - __main__ - INFO - Testing completed successfully
+2025-09-13 15:25:56 - __main__ - INFO - Starting training process for catboost
+2025-09-13 15:25:56 - __main__ - INFO - Data source: eyelink
+2025-09-13 15:25:56 - __main__ - INFO - Initialized classifier: CatBoostClassifier
+2025-09-13 15:25:56 - __main__ - INFO - Load best hyperparameters from results/train/eyelink/42/catboost/best_params.json
+2025-09-13 15:25:57 - __main__ - INFO - Fold 1 completed
+2025-09-13 15:25:57 - __main__ - INFO - Fold 2 completed
+2025-09-13 15:25:58 - __main__ - INFO - Fold 3 completed
+2025-09-13 15:25:58 - __main__ - INFO - Fold 4 completed
+2025-09-13 15:25:58 - __main__ - INFO - Fold 5 completed
+2025-09-13 15:25:59 - __main__ - INFO - Fold 6 completed
+2025-09-13 15:25:59 - __main__ - INFO - Fold 7 completed
+2025-09-13 15:25:59 - __main__ - INFO - Fold 8 completed
+2025-09-13 15:26:00 - __main__ - INFO - Fold 9 completed
+2025-09-13 15:26:00 - __main__ - INFO - Fold 10 completed
+2025-09-13 15:26:00 - __main__ - INFO - Saved CV results to results/test/eyelink/42\catboost/k_fold.csv
+2025-09-13 15:26:00 - __main__ - INFO - Testing completed successfully

@@ -1,0 +1,96 @@
+2025-07-15 17:21:32 - __main__ - INFO - Starting training process for knn
+2025-07-15 17:21:35 - __main__ - INFO - Data source: eyelink
+2025-07-15 17:21:35 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-15 17:21:35 - __main__ - INFO - Load best hyperparameters from results/train/eyelink/42/knn/best_params.json
+2025-07-15 17:21:36 - __main__ - INFO - Fold 1 completed
+2025-07-15 17:21:36 - __main__ - INFO - Fold 2 completed
+2025-07-15 17:21:36 - __main__ - INFO - Fold 3 completed
+2025-07-15 17:21:36 - __main__ - INFO - Fold 4 completed
+2025-07-15 17:21:36 - __main__ - INFO - Fold 5 completed
+2025-07-15 17:21:36 - __main__ - INFO - Fold 6 completed
+2025-07-15 17:21:36 - __main__ - INFO - Fold 7 completed
+2025-07-15 17:21:36 - __main__ - INFO - Fold 8 completed
+2025-07-15 17:21:37 - __main__ - INFO - Fold 9 completed
+2025-07-15 17:21:37 - __main__ - INFO - Fold 10 completed
+2025-07-15 17:21:37 - __main__ - INFO - Saved CV results to results/test/eyelink/42\knn/k_fold.csv
+2025-07-15 17:21:37 - __main__ - INFO - Testing completed successfully
+2025-07-21 11:24:36 - __main__ - INFO - Starting training process for knn
+2025-07-21 11:24:36 - __main__ - INFO - Data source: eyelink
+2025-07-21 11:24:36 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-21 11:24:36 - __main__ - INFO - Load best hyperparameters from results/train/eyelink/42/knn/best_params.json
+2025-07-21 11:24:36 - __main__ - INFO - Fold 1 completed
+2025-07-21 11:24:36 - __main__ - INFO - Fold 2 completed
+2025-07-21 11:24:36 - __main__ - INFO - Fold 3 completed
+2025-07-21 11:24:37 - __main__ - INFO - Fold 4 completed
+2025-07-21 11:24:37 - __main__ - INFO - Fold 5 completed
+2025-07-21 11:24:37 - __main__ - INFO - Fold 6 completed
+2025-07-21 11:24:37 - __main__ - INFO - Fold 7 completed
+2025-07-21 11:24:37 - __main__ - INFO - Fold 8 completed
+2025-07-21 11:24:37 - __main__ - INFO - Fold 9 completed
+2025-07-21 11:24:37 - __main__ - INFO - Fold 10 completed
+2025-07-21 11:24:37 - __main__ - INFO - Saved CV results to results/test/eyelink/42\knn/k_fold.csv
+2025-07-21 11:24:37 - __main__ - INFO - Testing completed successfully
+2025-07-30 17:14:32 - __main__ - INFO - Starting training process for knn
+2025-07-30 17:14:32 - __main__ - INFO - Data source: eyelink
+2025-07-30 17:14:32 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-30 17:14:32 - __main__ - INFO - Load best hyperparameters from results_rm/train/eyelink/42/knn/best_params.json
+2025-07-30 17:14:32 - __main__ - INFO - Fold 1 completed
+2025-07-30 17:14:32 - __main__ - INFO - Fold 2 completed
+2025-07-30 17:14:32 - __main__ - INFO - Fold 3 completed
+2025-07-30 17:14:32 - __main__ - INFO - Fold 4 completed
+2025-07-30 17:14:32 - __main__ - INFO - Fold 5 completed
+2025-07-30 17:14:32 - __main__ - INFO - Fold 6 completed
+2025-07-30 17:14:32 - __main__ - INFO - Fold 7 completed
+2025-07-30 17:14:32 - __main__ - INFO - Fold 8 completed
+2025-07-30 17:14:32 - __main__ - INFO - Fold 9 completed
+2025-07-30 17:14:32 - __main__ - INFO - Fold 10 completed
+2025-07-30 17:14:32 - __main__ - INFO - Saved CV results to results_rm/test/eyelink/42\knn/k_fold.csv
+2025-07-30 17:14:32 - __main__ - INFO - Testing completed successfully
+2025-07-30 18:05:20 - __main__ - INFO - Starting training process for knn
+2025-07-30 18:05:20 - __main__ - INFO - Data source: eyelink
+2025-07-30 18:05:20 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-30 18:05:20 - __main__ - INFO - Load best hyperparameters from results_rm/train/eyelink/42/knn/best_params.json
+2025-07-30 18:05:20 - __main__ - INFO - Fold 1 completed
+2025-07-30 18:05:20 - __main__ - INFO - Fold 2 completed
+2025-07-30 18:05:20 - __main__ - INFO - Fold 3 completed
+2025-07-30 18:05:20 - __main__ - INFO - Fold 4 completed
+2025-07-30 18:05:20 - __main__ - INFO - Fold 5 completed
+2025-07-30 18:05:20 - __main__ - INFO - Fold 6 completed
+2025-07-30 18:05:20 - __main__ - INFO - Fold 7 completed
+2025-07-30 18:05:20 - __main__ - INFO - Fold 8 completed
+2025-07-30 18:05:20 - __main__ - INFO - Fold 9 completed
+2025-07-30 18:05:20 - __main__ - INFO - Fold 10 completed
+2025-07-30 18:05:20 - __main__ - INFO - Saved CV results to results_rm/test/eyelink/42\knn/k_fold.csv
+2025-07-30 18:05:20 - __main__ - INFO - Testing completed successfully
+2025-07-31 09:20:59 - __main__ - INFO - Starting training process for knn
+2025-07-31 09:20:59 - __main__ - INFO - Data source: eyelink
+2025-07-31 09:20:59 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-31 09:20:59 - __main__ - INFO - Load best hyperparameters from results_rm/train/eyelink/42/knn/best_params.json
+2025-07-31 09:20:59 - __main__ - INFO - Fold 1 completed
+2025-07-31 09:20:59 - __main__ - INFO - Fold 2 completed
+2025-07-31 09:20:59 - __main__ - INFO - Fold 3 completed
+2025-07-31 09:20:59 - __main__ - INFO - Fold 4 completed
+2025-07-31 09:20:59 - __main__ - INFO - Fold 5 completed
+2025-07-31 09:20:59 - __main__ - INFO - Fold 6 completed
+2025-07-31 09:20:59 - __main__ - INFO - Fold 7 completed
+2025-07-31 09:20:59 - __main__ - INFO - Fold 8 completed
+2025-07-31 09:20:59 - __main__ - INFO - Fold 9 completed
+2025-07-31 09:20:59 - __main__ - INFO - Fold 10 completed
+2025-07-31 09:20:59 - __main__ - INFO - Saved CV results to results_rm/test/eyelink/42\knn/k_fold.csv
+2025-07-31 09:20:59 - __main__ - INFO - Testing completed successfully
+2025-09-13 15:25:01 - __main__ - INFO - Starting training process for knn
+2025-09-13 15:25:01 - __main__ - INFO - Data source: eyelink
+2025-09-13 15:25:01 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-09-13 15:25:01 - __main__ - INFO - Load best hyperparameters from results/train/eyelink/42/knn/best_params.json
+2025-09-13 15:25:02 - __main__ - INFO - Fold 1 completed
+2025-09-13 15:25:02 - __main__ - INFO - Fold 2 completed
+2025-09-13 15:25:02 - __main__ - INFO - Fold 3 completed
+2025-09-13 15:25:02 - __main__ - INFO - Fold 4 completed
+2025-09-13 15:25:02 - __main__ - INFO - Fold 5 completed
+2025-09-13 15:25:02 - __main__ - INFO - Fold 6 completed
+2025-09-13 15:25:02 - __main__ - INFO - Fold 7 completed
+2025-09-13 15:25:02 - __main__ - INFO - Fold 8 completed
+2025-09-13 15:25:02 - __main__ - INFO - Fold 9 completed
+2025-09-13 15:25:03 - __main__ - INFO - Fold 10 completed
+2025-09-13 15:25:03 - __main__ - INFO - Saved CV results to results/test/eyelink/42\knn/k_fold.csv
+2025-09-13 15:25:03 - __main__ - INFO - Testing completed successfully

@@ -1,0 +1,96 @@
+2025-07-15 17:22:01 - __main__ - INFO - Starting training process for bagging
+2025-07-15 17:22:01 - __main__ - INFO - Data source: eyelink
+2025-07-15 17:22:01 - __main__ - INFO - Initialized classifier: BaggingClassifier
+2025-07-15 17:22:01 - __main__ - INFO - Load best hyperparameters from results/train/eyelink/42/bagging/best_params.json
+2025-07-15 17:22:02 - __main__ - INFO - Fold 1 completed
+2025-07-15 17:22:03 - __main__ - INFO - Fold 2 completed
+2025-07-15 17:22:03 - __main__ - INFO - Fold 3 completed
+2025-07-15 17:22:06 - __main__ - INFO - Fold 4 completed
+2025-07-15 17:22:07 - __main__ - INFO - Fold 5 completed
+2025-07-15 17:22:08 - __main__ - INFO - Fold 6 completed
+2025-07-15 17:22:09 - __main__ - INFO - Fold 7 completed
+2025-07-15 17:22:10 - __main__ - INFO - Fold 8 completed
+2025-07-15 17:22:12 - __main__ - INFO - Fold 9 completed
+2025-07-15 17:22:13 - __main__ - INFO - Fold 10 completed
+2025-07-15 17:22:13 - __main__ - INFO - Saved CV results to results/test/eyelink/42\bagging/k_fold.csv
+2025-07-15 17:22:13 - __main__ - INFO - Testing completed successfully
+2025-07-21 11:24:45 - __main__ - INFO - Starting training process for bagging
+2025-07-21 11:24:45 - __main__ - INFO - Data source: eyelink
+2025-07-21 11:24:45 - __main__ - INFO - Initialized classifier: BaggingClassifier
+2025-07-21 11:24:45 - __main__ - INFO - Load best hyperparameters from results/train/eyelink/42/bagging/best_params.json
+2025-07-21 11:24:46 - __main__ - INFO - Fold 1 completed
+2025-07-21 11:24:46 - __main__ - INFO - Fold 2 completed
+2025-07-21 11:24:47 - __main__ - INFO - Fold 3 completed
+2025-07-21 11:24:48 - __main__ - INFO - Fold 4 completed
+2025-07-21 11:24:48 - __main__ - INFO - Fold 5 completed
+2025-07-21 11:24:49 - __main__ - INFO - Fold 6 completed
+2025-07-21 11:24:49 - __main__ - INFO - Fold 7 completed
+2025-07-21 11:24:50 - __main__ - INFO - Fold 8 completed
+2025-07-21 11:24:50 - __main__ - INFO - Fold 9 completed
+2025-07-21 11:24:51 - __main__ - INFO - Fold 10 completed
+2025-07-21 11:24:51 - __main__ - INFO - Saved CV results to results/test/eyelink/42\bagging/k_fold.csv
+2025-07-21 11:24:51 - __main__ - INFO - Testing completed successfully
+2025-07-30 17:14:50 - __main__ - INFO - Starting training process for bagging
+2025-07-30 17:14:50 - __main__ - INFO - Data source: eyelink
+2025-07-30 17:14:50 - __main__ - INFO - Initialized classifier: BaggingClassifier
+2025-07-30 17:14:50 - __main__ - INFO - Load best hyperparameters from results_rm/train/eyelink/42/bagging/best_params.json
+2025-07-30 17:14:50 - __main__ - INFO - Fold 1 completed
+2025-07-30 17:14:51 - __main__ - INFO - Fold 2 completed
+2025-07-30 17:14:52 - __main__ - INFO - Fold 3 completed
+2025-07-30 17:14:54 - __main__ - INFO - Fold 4 completed
+2025-07-30 17:14:55 - __main__ - INFO - Fold 5 completed
+2025-07-30 17:14:57 - __main__ - INFO - Fold 6 completed
+2025-07-30 17:14:57 - __main__ - INFO - Fold 7 completed
+2025-07-30 17:14:58 - __main__ - INFO - Fold 8 completed
+2025-07-30 17:14:59 - __main__ - INFO - Fold 9 completed
+2025-07-30 17:14:59 - __main__ - INFO - Fold 10 completed
+2025-07-30 17:14:59 - __main__ - INFO - Saved CV results to results_rm/test/eyelink/42\bagging/k_fold.csv
+2025-07-30 17:14:59 - __main__ - INFO - Testing completed successfully
+2025-07-30 18:05:35 - __main__ - INFO - Starting training process for bagging
+2025-07-30 18:05:35 - __main__ - INFO - Data source: eyelink
+2025-07-30 18:05:35 - __main__ - INFO - Initialized classifier: BaggingClassifier
+2025-07-30 18:05:35 - __main__ - INFO - Load best hyperparameters from results_rm/train/eyelink/42/bagging/best_params.json
+2025-07-30 18:05:36 - __main__ - INFO - Fold 1 completed
+2025-07-30 18:05:37 - __main__ - INFO - Fold 2 completed
+2025-07-30 18:05:37 - __main__ - INFO - Fold 3 completed
+2025-07-30 18:05:38 - __main__ - INFO - Fold 4 completed
+2025-07-30 18:05:39 - __main__ - INFO - Fold 5 completed
+2025-07-30 18:05:40 - __main__ - INFO - Fold 6 completed
+2025-07-30 18:05:40 - __main__ - INFO - Fold 7 completed
+2025-07-30 18:05:41 - __main__ - INFO - Fold 8 completed
+2025-07-30 18:05:42 - __main__ - INFO - Fold 9 completed
+2025-07-30 18:05:42 - __main__ - INFO - Fold 10 completed
+2025-07-30 18:05:42 - __main__ - INFO - Saved CV results to results_rm/test/eyelink/42\bagging/k_fold.csv
+2025-07-30 18:05:42 - __main__ - INFO - Testing completed successfully
+2025-07-31 09:21:09 - __main__ - INFO - Starting training process for bagging
+2025-07-31 09:21:09 - __main__ - INFO - Data source: eyelink
+2025-07-31 09:21:09 - __main__ - INFO - Initialized classifier: BaggingClassifier
+2025-07-31 09:21:09 - __main__ - INFO - Load best hyperparameters from results_rm/train/eyelink/42/bagging/best_params.json
+2025-07-31 09:21:09 - __main__ - INFO - Fold 1 completed
+2025-07-31 09:21:10 - __main__ - INFO - Fold 2 completed
+2025-07-31 09:21:10 - __main__ - INFO - Fold 3 completed
+2025-07-31 09:21:10 - __main__ - INFO - Fold 4 completed
+2025-07-31 09:21:10 - __main__ - INFO - Fold 5 completed
+2025-07-31 09:21:11 - __main__ - INFO - Fold 6 completed
+2025-07-31 09:21:11 - __main__ - INFO - Fold 7 completed
+2025-07-31 09:21:11 - __main__ - INFO - Fold 8 completed
+2025-07-31 09:21:11 - __main__ - INFO - Fold 9 completed
+2025-07-31 09:21:11 - __main__ - INFO - Fold 10 completed
+2025-07-31 09:21:11 - __main__ - INFO - Saved CV results to results_rm/test/eyelink/42\bagging/k_fold.csv
+2025-07-31 09:21:11 - __main__ - INFO - Testing completed successfully
+2025-09-13 15:25:15 - __main__ - INFO - Starting training process for bagging
+2025-09-13 15:25:15 - __main__ - INFO - Data source: eyelink
+2025-09-13 15:25:15 - __main__ - INFO - Initialized classifier: BaggingClassifier
+2025-09-13 15:25:15 - __main__ - INFO - Load best hyperparameters from results/train/eyelink/42/bagging/best_params.json
+2025-09-13 15:25:16 - __main__ - INFO - Fold 1 completed
+2025-09-13 15:25:16 - __main__ - INFO - Fold 2 completed
+2025-09-13 15:25:17 - __main__ - INFO - Fold 3 completed
+2025-09-13 15:25:18 - __main__ - INFO - Fold 4 completed
+2025-09-13 15:25:19 - __main__ - INFO - Fold 5 completed
+2025-09-13 15:25:19 - __main__ - INFO - Fold 6 completed
+2025-09-13 15:25:20 - __main__ - INFO - Fold 7 completed
+2025-09-13 15:25:21 - __main__ - INFO - Fold 8 completed
+2025-09-13 15:25:21 - __main__ - INFO - Fold 9 completed
+2025-09-13 15:25:22 - __main__ - INFO - Fold 10 completed
+2025-09-13 15:25:22 - __main__ - INFO - Saved CV results to results/test/eyelink/42\bagging/k_fold.csv
+2025-09-13 15:25:22 - __main__ - INFO - Testing completed successfully

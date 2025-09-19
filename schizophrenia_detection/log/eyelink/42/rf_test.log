@@ -1,0 +1,96 @@
+2025-07-15 17:21:46 - __main__ - INFO - Starting training process for rf
+2025-07-15 17:21:47 - __main__ - INFO - Data source: eyelink
+2025-07-15 17:21:47 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-15 17:21:47 - __main__ - INFO - Load best hyperparameters from results/train/eyelink/42/rf/best_params.json
+2025-07-15 17:21:48 - __main__ - INFO - Fold 1 completed
+2025-07-15 17:21:48 - __main__ - INFO - Fold 2 completed
+2025-07-15 17:21:49 - __main__ - INFO - Fold 3 completed
+2025-07-15 17:21:51 - __main__ - INFO - Fold 4 completed
+2025-07-15 17:21:52 - __main__ - INFO - Fold 5 completed
+2025-07-15 17:21:53 - __main__ - INFO - Fold 6 completed
+2025-07-15 17:21:53 - __main__ - INFO - Fold 7 completed
+2025-07-15 17:21:54 - __main__ - INFO - Fold 8 completed
+2025-07-15 17:21:54 - __main__ - INFO - Fold 9 completed
+2025-07-15 17:21:57 - __main__ - INFO - Fold 10 completed
+2025-07-15 17:21:58 - __main__ - INFO - Saved CV results to results/test/eyelink/42\rf/k_fold.csv
+2025-07-15 17:21:58 - __main__ - INFO - Testing completed successfully
+2025-07-21 11:24:42 - __main__ - INFO - Starting training process for rf
+2025-07-21 11:24:42 - __main__ - INFO - Data source: eyelink
+2025-07-21 11:24:42 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-21 11:24:42 - __main__ - INFO - Load best hyperparameters from results/train/eyelink/42/rf/best_params.json
+2025-07-21 11:24:42 - __main__ - INFO - Fold 1 completed
+2025-07-21 11:24:42 - __main__ - INFO - Fold 2 completed
+2025-07-21 11:24:42 - __main__ - INFO - Fold 3 completed
+2025-07-21 11:24:42 - __main__ - INFO - Fold 4 completed
+2025-07-21 11:24:42 - __main__ - INFO - Fold 5 completed
+2025-07-21 11:24:42 - __main__ - INFO - Fold 6 completed
+2025-07-21 11:24:43 - __main__ - INFO - Fold 7 completed
+2025-07-21 11:24:43 - __main__ - INFO - Fold 8 completed
+2025-07-21 11:24:43 - __main__ - INFO - Fold 9 completed
+2025-07-21 11:24:43 - __main__ - INFO - Fold 10 completed
+2025-07-21 11:24:43 - __main__ - INFO - Saved CV results to results/test/eyelink/42\rf/k_fold.csv
+2025-07-21 11:24:43 - __main__ - INFO - Testing completed successfully
+2025-07-30 17:14:38 - __main__ - INFO - Starting training process for rf
+2025-07-30 17:14:38 - __main__ - INFO - Data source: eyelink
+2025-07-30 17:14:38 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-30 17:14:38 - __main__ - INFO - Load best hyperparameters from results_rm/train/eyelink/42/rf/best_params.json
+2025-07-30 17:14:40 - __main__ - INFO - Fold 1 completed
+2025-07-30 17:14:41 - __main__ - INFO - Fold 2 completed
+2025-07-30 17:14:42 - __main__ - INFO - Fold 3 completed
+2025-07-30 17:14:43 - __main__ - INFO - Fold 4 completed
+2025-07-30 17:14:44 - __main__ - INFO - Fold 5 completed
+2025-07-30 17:14:45 - __main__ - INFO - Fold 6 completed
+2025-07-30 17:14:45 - __main__ - INFO - Fold 7 completed
+2025-07-30 17:14:46 - __main__ - INFO - Fold 8 completed
+2025-07-30 17:14:47 - __main__ - INFO - Fold 9 completed
+2025-07-30 17:14:48 - __main__ - INFO - Fold 10 completed
+2025-07-30 17:14:48 - __main__ - INFO - Saved CV results to results_rm/test/eyelink/42\rf/k_fold.csv
+2025-07-30 17:14:48 - __main__ - INFO - Testing completed successfully
+2025-07-30 18:05:25 - __main__ - INFO - Starting training process for rf
+2025-07-30 18:05:25 - __main__ - INFO - Data source: eyelink
+2025-07-30 18:05:25 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-30 18:05:25 - __main__ - INFO - Load best hyperparameters from results_rm/train/eyelink/42/rf/best_params.json
+2025-07-30 18:05:26 - __main__ - INFO - Fold 1 completed
+2025-07-30 18:05:27 - __main__ - INFO - Fold 2 completed
+2025-07-30 18:05:28 - __main__ - INFO - Fold 3 completed
+2025-07-30 18:05:28 - __main__ - INFO - Fold 4 completed
+2025-07-30 18:05:29 - __main__ - INFO - Fold 5 completed
+2025-07-30 18:05:30 - __main__ - INFO - Fold 6 completed
+2025-07-30 18:05:31 - __main__ - INFO - Fold 7 completed
+2025-07-30 18:05:31 - __main__ - INFO - Fold 8 completed
+2025-07-30 18:05:32 - __main__ - INFO - Fold 9 completed
+2025-07-30 18:05:33 - __main__ - INFO - Fold 10 completed
+2025-07-30 18:05:33 - __main__ - INFO - Saved CV results to results_rm/test/eyelink/42\rf/k_fold.csv
+2025-07-30 18:05:33 - __main__ - INFO - Testing completed successfully
+2025-07-31 09:21:02 - __main__ - INFO - Starting training process for rf
+2025-07-31 09:21:02 - __main__ - INFO - Data source: eyelink
+2025-07-31 09:21:02 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-31 09:21:02 - __main__ - INFO - Load best hyperparameters from results_rm/train/eyelink/42/rf/best_params.json
+2025-07-31 09:21:02 - __main__ - INFO - Fold 1 completed
+2025-07-31 09:21:03 - __main__ - INFO - Fold 2 completed
+2025-07-31 09:21:03 - __main__ - INFO - Fold 3 completed
+2025-07-31 09:21:04 - __main__ - INFO - Fold 4 completed
+2025-07-31 09:21:04 - __main__ - INFO - Fold 5 completed
+2025-07-31 09:21:05 - __main__ - INFO - Fold 6 completed
+2025-07-31 09:21:05 - __main__ - INFO - Fold 7 completed
+2025-07-31 09:21:06 - __main__ - INFO - Fold 8 completed
+2025-07-31 09:21:06 - __main__ - INFO - Fold 9 completed
+2025-07-31 09:21:07 - __main__ - INFO - Fold 10 completed
+2025-07-31 09:21:07 - __main__ - INFO - Saved CV results to results_rm/test/eyelink/42\rf/k_fold.csv
+2025-07-31 09:21:07 - __main__ - INFO - Testing completed successfully
+2025-09-13 15:25:08 - __main__ - INFO - Starting training process for rf
+2025-09-13 15:25:08 - __main__ - INFO - Data source: eyelink
+2025-09-13 15:25:08 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-09-13 15:25:08 - __main__ - INFO - Load best hyperparameters from results/train/eyelink/42/rf/best_params.json
+2025-09-13 15:25:08 - __main__ - INFO - Fold 1 completed
+2025-09-13 15:25:09 - __main__ - INFO - Fold 2 completed
+2025-09-13 15:25:09 - __main__ - INFO - Fold 3 completed
+2025-09-13 15:25:09 - __main__ - INFO - Fold 4 completed
+2025-09-13 15:25:10 - __main__ - INFO - Fold 5 completed
+2025-09-13 15:25:10 - __main__ - INFO - Fold 6 completed
+2025-09-13 15:25:11 - __main__ - INFO - Fold 7 completed
+2025-09-13 15:25:12 - __main__ - INFO - Fold 8 completed
+2025-09-13 15:25:12 - __main__ - INFO - Fold 9 completed
+2025-09-13 15:25:12 - __main__ - INFO - Fold 10 completed
+2025-09-13 15:25:12 - __main__ - INFO - Saved CV results to results/test/eyelink/42\rf/k_fold.csv
+2025-09-13 15:25:12 - __main__ - INFO - Testing completed successfully

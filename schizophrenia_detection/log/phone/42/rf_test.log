@@ -1,0 +1,96 @@
+2025-07-15 17:27:02 - __main__ - INFO - Starting training process for rf
+2025-07-15 17:27:02 - __main__ - INFO - Data source: phone
+2025-07-15 17:27:02 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-15 17:27:02 - __main__ - INFO - Load best hyperparameters from results/train/phone/42/rf/best_params.json
+2025-07-15 17:27:03 - __main__ - INFO - Fold 1 completed
+2025-07-15 17:27:03 - __main__ - INFO - Fold 2 completed
+2025-07-15 17:27:04 - __main__ - INFO - Fold 3 completed
+2025-07-15 17:27:04 - __main__ - INFO - Fold 4 completed
+2025-07-15 17:27:05 - __main__ - INFO - Fold 5 completed
+2025-07-15 17:27:06 - __main__ - INFO - Fold 6 completed
+2025-07-15 17:27:06 - __main__ - INFO - Fold 7 completed
+2025-07-15 17:27:07 - __main__ - INFO - Fold 8 completed
+2025-07-15 17:27:07 - __main__ - INFO - Fold 9 completed
+2025-07-15 17:27:08 - __main__ - INFO - Fold 10 completed
+2025-07-15 17:27:08 - __main__ - INFO - Saved CV results to results/test/phone/42\rf/k_fold.csv
+2025-07-15 17:27:08 - __main__ - INFO - Testing completed successfully
+2025-07-21 11:13:05 - __main__ - INFO - Starting training process for rf
+2025-07-21 11:13:05 - __main__ - INFO - Data source: phone
+2025-07-21 11:13:05 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-21 11:13:05 - __main__ - INFO - Load best hyperparameters from results/train/phone/42/rf/best_params.json
+2025-07-21 11:13:05 - __main__ - INFO - Fold 1 completed
+2025-07-21 11:13:06 - __main__ - INFO - Fold 2 completed
+2025-07-21 11:13:06 - __main__ - INFO - Fold 3 completed
+2025-07-21 11:13:06 - __main__ - INFO - Fold 4 completed
+2025-07-21 11:13:06 - __main__ - INFO - Fold 5 completed
+2025-07-21 11:13:07 - __main__ - INFO - Fold 6 completed
+2025-07-21 11:13:07 - __main__ - INFO - Fold 7 completed
+2025-07-21 11:13:07 - __main__ - INFO - Fold 8 completed
+2025-07-21 11:13:07 - __main__ - INFO - Fold 9 completed
+2025-07-21 11:13:08 - __main__ - INFO - Fold 10 completed
+2025-07-21 11:13:08 - __main__ - INFO - Saved CV results to results/test/phone/42\rf/k_fold.csv
+2025-07-21 11:13:08 - __main__ - INFO - Testing completed successfully
+2025-07-30 17:02:04 - __main__ - INFO - Starting training process for rf
+2025-07-30 17:02:04 - __main__ - INFO - Data source: phone
+2025-07-30 17:02:04 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-30 17:02:04 - __main__ - INFO - Load best hyperparameters from results_rm/train/phone/42/rf/best_params.json
+2025-07-30 17:02:04 - __main__ - INFO - Fold 1 completed
+2025-07-30 17:02:05 - __main__ - INFO - Fold 2 completed
+2025-07-30 17:02:05 - __main__ - INFO - Fold 3 completed
+2025-07-30 17:02:06 - __main__ - INFO - Fold 4 completed
+2025-07-30 17:02:06 - __main__ - INFO - Fold 5 completed
+2025-07-30 17:02:07 - __main__ - INFO - Fold 6 completed
+2025-07-30 17:02:07 - __main__ - INFO - Fold 7 completed
+2025-07-30 17:02:08 - __main__ - INFO - Fold 8 completed
+2025-07-30 17:02:08 - __main__ - INFO - Fold 9 completed
+2025-07-30 17:02:08 - __main__ - INFO - Fold 10 completed
+2025-07-30 17:02:08 - __main__ - INFO - Saved CV results to results_rm/test/phone/42\rf/k_fold.csv
+2025-07-30 17:02:08 - __main__ - INFO - Testing completed successfully
+2025-07-30 17:53:18 - __main__ - INFO - Starting training process for rf
+2025-07-30 17:53:18 - __main__ - INFO - Data source: phone
+2025-07-30 17:53:18 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-30 17:53:18 - __main__ - INFO - Load best hyperparameters from results_rm/train/phone/42/rf/best_params.json
+2025-07-30 17:53:18 - __main__ - INFO - Fold 1 completed
+2025-07-30 17:53:19 - __main__ - INFO - Fold 2 completed
+2025-07-30 17:53:19 - __main__ - INFO - Fold 3 completed
+2025-07-30 17:53:19 - __main__ - INFO - Fold 4 completed
+2025-07-30 17:53:20 - __main__ - INFO - Fold 5 completed
+2025-07-30 17:53:20 - __main__ - INFO - Fold 6 completed
+2025-07-30 17:53:20 - __main__ - INFO - Fold 7 completed
+2025-07-30 17:53:20 - __main__ - INFO - Fold 8 completed
+2025-07-30 17:53:21 - __main__ - INFO - Fold 9 completed
+2025-07-30 17:53:21 - __main__ - INFO - Fold 10 completed
+2025-07-30 17:53:21 - __main__ - INFO - Saved CV results to results_rm/test/phone/42\rf/k_fold.csv
+2025-07-30 17:53:21 - __main__ - INFO - Testing completed successfully
+2025-07-31 09:10:49 - __main__ - INFO - Starting training process for rf
+2025-07-31 09:10:49 - __main__ - INFO - Data source: phone
+2025-07-31 09:10:49 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-31 09:10:49 - __main__ - INFO - Load best hyperparameters from results_rm/train/phone/42/rf/best_params.json
+2025-07-31 09:10:49 - __main__ - INFO - Fold 1 completed
+2025-07-31 09:10:49 - __main__ - INFO - Fold 2 completed
+2025-07-31 09:10:49 - __main__ - INFO - Fold 3 completed
+2025-07-31 09:10:49 - __main__ - INFO - Fold 4 completed
+2025-07-31 09:10:49 - __main__ - INFO - Fold 5 completed
+2025-07-31 09:10:49 - __main__ - INFO - Fold 6 completed
+2025-07-31 09:10:49 - __main__ - INFO - Fold 7 completed
+2025-07-31 09:10:50 - __main__ - INFO - Fold 8 completed
+2025-07-31 09:10:50 - __main__ - INFO - Fold 9 completed
+2025-07-31 09:10:50 - __main__ - INFO - Fold 10 completed
+2025-07-31 09:10:50 - __main__ - INFO - Saved CV results to results_rm/test/phone/42\rf/k_fold.csv
+2025-07-31 09:10:50 - __main__ - INFO - Testing completed successfully
+2025-09-13 15:25:17 - __main__ - INFO - Starting training process for rf
+2025-09-13 15:25:17 - __main__ - INFO - Data source: phone
+2025-09-13 15:25:17 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-09-13 15:25:17 - __main__ - INFO - Load best hyperparameters from results/train/phone/42/rf/best_params.json
+2025-09-13 15:25:17 - __main__ - INFO - Fold 1 completed
+2025-09-13 15:25:18 - __main__ - INFO - Fold 2 completed
+2025-09-13 15:25:18 - __main__ - INFO - Fold 3 completed
+2025-09-13 15:25:19 - __main__ - INFO - Fold 4 completed
+2025-09-13 15:25:19 - __main__ - INFO - Fold 5 completed
+2025-09-13 15:25:19 - __main__ - INFO - Fold 6 completed
+2025-09-13 15:25:20 - __main__ - INFO - Fold 7 completed
+2025-09-13 15:25:20 - __main__ - INFO - Fold 8 completed
+2025-09-13 15:25:21 - __main__ - INFO - Fold 9 completed
+2025-09-13 15:25:21 - __main__ - INFO - Fold 10 completed
+2025-09-13 15:25:21 - __main__ - INFO - Saved CV results to results/test/phone/42\rf/k_fold.csv
+2025-09-13 15:25:21 - __main__ - INFO - Testing completed successfully

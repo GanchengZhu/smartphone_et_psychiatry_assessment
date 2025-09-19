@@ -1,0 +1,96 @@
+2025-07-15 17:26:55 - __main__ - INFO - Starting training process for knn
+2025-07-15 17:26:55 - __main__ - INFO - Data source: phone
+2025-07-15 17:26:55 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-15 17:26:55 - __main__ - INFO - Load best hyperparameters from results/train/phone/42/knn/best_params.json
+2025-07-15 17:26:55 - __main__ - INFO - Fold 1 completed
+2025-07-15 17:26:55 - __main__ - INFO - Fold 2 completed
+2025-07-15 17:26:56 - __main__ - INFO - Fold 3 completed
+2025-07-15 17:26:56 - __main__ - INFO - Fold 4 completed
+2025-07-15 17:26:56 - __main__ - INFO - Fold 5 completed
+2025-07-15 17:26:56 - __main__ - INFO - Fold 6 completed
+2025-07-15 17:26:56 - __main__ - INFO - Fold 7 completed
+2025-07-15 17:26:56 - __main__ - INFO - Fold 8 completed
+2025-07-15 17:26:56 - __main__ - INFO - Fold 9 completed
+2025-07-15 17:26:56 - __main__ - INFO - Fold 10 completed
+2025-07-15 17:26:56 - __main__ - INFO - Saved CV results to results/test/phone/42\knn/k_fold.csv
+2025-07-15 17:26:56 - __main__ - INFO - Testing completed successfully
+2025-07-21 11:12:59 - __main__ - INFO - Starting training process for knn
+2025-07-21 11:12:59 - __main__ - INFO - Data source: phone
+2025-07-21 11:12:59 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-21 11:12:59 - __main__ - INFO - Load best hyperparameters from results/train/phone/42/knn/best_params.json
+2025-07-21 11:13:00 - __main__ - INFO - Fold 1 completed
+2025-07-21 11:13:00 - __main__ - INFO - Fold 2 completed
+2025-07-21 11:13:00 - __main__ - INFO - Fold 3 completed
+2025-07-21 11:13:00 - __main__ - INFO - Fold 4 completed
+2025-07-21 11:13:00 - __main__ - INFO - Fold 5 completed
+2025-07-21 11:13:00 - __main__ - INFO - Fold 6 completed
+2025-07-21 11:13:00 - __main__ - INFO - Fold 7 completed
+2025-07-21 11:13:00 - __main__ - INFO - Fold 8 completed
+2025-07-21 11:13:00 - __main__ - INFO - Fold 9 completed
+2025-07-21 11:13:00 - __main__ - INFO - Fold 10 completed
+2025-07-21 11:13:00 - __main__ - INFO - Saved CV results to results/test/phone/42\knn/k_fold.csv
+2025-07-21 11:13:00 - __main__ - INFO - Testing completed successfully
+2025-07-30 17:01:58 - __main__ - INFO - Starting training process for knn
+2025-07-30 17:01:58 - __main__ - INFO - Data source: phone
+2025-07-30 17:01:58 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-30 17:01:58 - __main__ - INFO - Load best hyperparameters from results_rm/train/phone/42/knn/best_params.json
+2025-07-30 17:01:58 - __main__ - INFO - Fold 1 completed
+2025-07-30 17:01:58 - __main__ - INFO - Fold 2 completed
+2025-07-30 17:01:58 - __main__ - INFO - Fold 3 completed
+2025-07-30 17:01:58 - __main__ - INFO - Fold 4 completed
+2025-07-30 17:01:58 - __main__ - INFO - Fold 5 completed
+2025-07-30 17:01:58 - __main__ - INFO - Fold 6 completed
+2025-07-30 17:01:59 - __main__ - INFO - Fold 7 completed
+2025-07-30 17:01:59 - __main__ - INFO - Fold 8 completed
+2025-07-30 17:01:59 - __main__ - INFO - Fold 9 completed
+2025-07-30 17:01:59 - __main__ - INFO - Fold 10 completed
+2025-07-30 17:01:59 - __main__ - INFO - Saved CV results to results_rm/test/phone/42\knn/k_fold.csv
+2025-07-30 17:01:59 - __main__ - INFO - Testing completed successfully
+2025-07-30 17:53:13 - __main__ - INFO - Starting training process for knn
+2025-07-30 17:53:13 - __main__ - INFO - Data source: phone
+2025-07-30 17:53:13 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-30 17:53:13 - __main__ - INFO - Load best hyperparameters from results_rm/train/phone/42/knn/best_params.json
+2025-07-30 17:53:13 - __main__ - INFO - Fold 1 completed
+2025-07-30 17:53:13 - __main__ - INFO - Fold 2 completed
+2025-07-30 17:53:13 - __main__ - INFO - Fold 3 completed
+2025-07-30 17:53:13 - __main__ - INFO - Fold 4 completed
+2025-07-30 17:53:13 - __main__ - INFO - Fold 5 completed
+2025-07-30 17:53:13 - __main__ - INFO - Fold 6 completed
+2025-07-30 17:53:13 - __main__ - INFO - Fold 7 completed
+2025-07-30 17:53:13 - __main__ - INFO - Fold 8 completed
+2025-07-30 17:53:13 - __main__ - INFO - Fold 9 completed
+2025-07-30 17:53:13 - __main__ - INFO - Fold 10 completed
+2025-07-30 17:53:13 - __main__ - INFO - Saved CV results to results_rm/test/phone/42\knn/k_fold.csv
+2025-07-30 17:53:13 - __main__ - INFO - Testing completed successfully
+2025-07-31 09:10:43 - __main__ - INFO - Starting training process for knn
+2025-07-31 09:10:43 - __main__ - INFO - Data source: phone
+2025-07-31 09:10:43 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-31 09:10:43 - __main__ - INFO - Load best hyperparameters from results_rm/train/phone/42/knn/best_params.json
+2025-07-31 09:10:43 - __main__ - INFO - Fold 1 completed
+2025-07-31 09:10:43 - __main__ - INFO - Fold 2 completed
+2025-07-31 09:10:44 - __main__ - INFO - Fold 3 completed
+2025-07-31 09:10:44 - __main__ - INFO - Fold 4 completed
+2025-07-31 09:10:44 - __main__ - INFO - Fold 5 completed
+2025-07-31 09:10:44 - __main__ - INFO - Fold 6 completed
+2025-07-31 09:10:44 - __main__ - INFO - Fold 7 completed
+2025-07-31 09:10:44 - __main__ - INFO - Fold 8 completed
+2025-07-31 09:10:44 - __main__ - INFO - Fold 9 completed
+2025-07-31 09:10:44 - __main__ - INFO - Fold 10 completed
+2025-07-31 09:10:44 - __main__ - INFO - Saved CV results to results_rm/test/phone/42\knn/k_fold.csv
+2025-07-31 09:10:44 - __main__ - INFO - Testing completed successfully
+2025-09-13 15:25:10 - __main__ - INFO - Starting training process for knn
+2025-09-13 15:25:10 - __main__ - INFO - Data source: phone
+2025-09-13 15:25:10 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-09-13 15:25:10 - __main__ - INFO - Load best hyperparameters from results/train/phone/42/knn/best_params.json
+2025-09-13 15:25:10 - __main__ - INFO - Fold 1 completed
+2025-09-13 15:25:10 - __main__ - INFO - Fold 2 completed
+2025-09-13 15:25:11 - __main__ - INFO - Fold 3 completed
+2025-09-13 15:25:11 - __main__ - INFO - Fold 4 completed
+2025-09-13 15:25:11 - __main__ - INFO - Fold 5 completed
+2025-09-13 15:25:11 - __main__ - INFO - Fold 6 completed
+2025-09-13 15:25:11 - __main__ - INFO - Fold 7 completed
+2025-09-13 15:25:11 - __main__ - INFO - Fold 8 completed
+2025-09-13 15:25:11 - __main__ - INFO - Fold 9 completed
+2025-09-13 15:25:11 - __main__ - INFO - Fold 10 completed
+2025-09-13 15:25:11 - __main__ - INFO - Saved CV results to results/test/phone/42\knn/k_fold.csv
+2025-09-13 15:25:11 - __main__ - INFO - Testing completed successfully

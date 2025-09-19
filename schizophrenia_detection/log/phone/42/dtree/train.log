@@ -1,0 +1,42 @@
+2025-07-15 17:12:38 - __main__ - INFO - Starting training process for dtree
+2025-07-15 17:12:38 - __main__ - INFO - Data source: phone
+2025-07-15 17:12:38 - __main__ - INFO - Initialized classifier: DecisionTreeClassifier
+2025-07-15 17:12:38 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-15 17:12:45 - __main__ - INFO - Best parameters found: {'classifier__criterion': 'gini', 'classifier__max_depth': 3, 'classifier__min_samples_leaf': 16, 'classifier__min_samples_split': 2}
+2025-07-15 17:12:45 - __main__ - INFO - Saved best parameters to results/train/phone/42/dtree/best_params.json
+2025-07-15 17:12:45 - __main__ - INFO - Training completed successfully
+2025-07-21 11:03:55 - __main__ - INFO - Starting training process for dtree
+2025-07-21 11:03:55 - __main__ - INFO - Data source: phone
+2025-07-21 11:03:55 - __main__ - INFO - Initialized classifier: DecisionTreeClassifier
+2025-07-21 11:03:55 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-21 11:04:01 - __main__ - INFO - Best parameters found: {'classifier__criterion': 'gini', 'classifier__max_depth': 9, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 21}
+2025-07-21 11:04:01 - __main__ - INFO - Saved best parameters to results/train/phone/42/dtree/best_params.json
+2025-07-21 11:04:01 - __main__ - INFO - Training completed successfully
+2025-07-30 16:53:25 - __main__ - INFO - Starting training process for dtree
+2025-07-30 16:53:25 - __main__ - INFO - Data source: phone
+2025-07-30 16:53:25 - __main__ - INFO - Initialized classifier: DecisionTreeClassifier
+2025-07-30 16:53:25 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-30 16:53:33 - __main__ - INFO - Best parameters found: {'classifier__criterion': 'entropy', 'classifier__max_depth': 7, 'classifier__min_samples_leaf': 16, 'classifier__min_samples_split': 2}
+2025-07-30 16:53:33 - __main__ - INFO - Saved best parameters to results_rm/train/phone/42/dtree/best_params.json
+2025-07-30 16:53:33 - __main__ - INFO - Training completed successfully
+2025-07-30 17:44:59 - __main__ - INFO - Starting training process for dtree
+2025-07-30 17:44:59 - __main__ - INFO - Data source: phone
+2025-07-30 17:44:59 - __main__ - INFO - Initialized classifier: DecisionTreeClassifier
+2025-07-30 17:44:59 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-30 17:45:06 - __main__ - INFO - Best parameters found: {'classifier__criterion': 'entropy', 'classifier__max_depth': 7, 'classifier__min_samples_leaf': 16, 'classifier__min_samples_split': 2}
+2025-07-30 17:45:06 - __main__ - INFO - Saved best parameters to results_rm/train/phone/42/dtree/best_params.json
+2025-07-30 17:45:06 - __main__ - INFO - Training completed successfully
+2025-07-31 09:03:08 - __main__ - INFO - Starting training process for dtree
+2025-07-31 09:03:08 - __main__ - INFO - Data source: phone
+2025-07-31 09:03:08 - __main__ - INFO - Initialized classifier: DecisionTreeClassifier
+2025-07-31 09:03:08 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 09:03:14 - __main__ - INFO - Best parameters found: {'classifier__criterion': 'entropy', 'classifier__max_depth': 7, 'classifier__min_samples_leaf': 8, 'classifier__min_samples_split': 2}
+2025-07-31 09:03:14 - __main__ - INFO - Saved best parameters to results_rm/train/phone/42/dtree/best_params.json
+2025-07-31 09:03:14 - __main__ - INFO - Training completed successfully
+2025-09-13 14:59:41 - __main__ - INFO - Starting training process for dtree
+2025-09-13 14:59:41 - __main__ - INFO - Data source: phone
+2025-09-13 14:59:41 - __main__ - INFO - Initialized classifier: DecisionTreeClassifier
+2025-09-13 14:59:41 - __main__ - INFO - Fitting GridSearchCV...
+2025-09-13 14:59:50 - __main__ - INFO - Best parameters found: {'classifier__criterion': 'gini', 'classifier__max_depth': 5, 'classifier__min_samples_leaf': 16, 'classifier__min_samples_split': 2}
+2025-09-13 14:59:50 - __main__ - INFO - Saved best parameters to results/train/phone/42/dtree/best_params.json
+2025-09-13 14:59:50 - __main__ - INFO - Training completed successfully

@@ -1,0 +1,60 @@
+2025-07-31 18:20:54 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:20:54 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:20:54 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:20:54 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 18:26:09 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:26:09 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:26:09 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:26:09 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 18:29:40 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:29:40 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:29:40 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:29:40 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 18:32:41 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:32:41 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:32:41 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:32:41 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 18:34:50 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:34:50 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:34:50 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:34:50 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 18:36:48 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:36:48 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:36:48 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:36:48 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 18:39:23 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:39:23 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:39:23 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:39:23 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 18:41:16 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:41:16 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:41:16 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:41:16 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 18:45:23 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:45:23 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:45:23 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:45:23 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 18:46:41 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:46:41 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:46:41 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:46:41 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 18:48:37 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:48:37 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:48:37 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:48:37 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 18:49:58 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:49:58 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:49:58 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:49:58 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 18:51:07 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:51:07 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:51:07 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:51:07 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 18:53:28 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:53:28 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:53:28 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:53:28 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 18:55:59 - __main__ - INFO - Starting training process for ann
+2025-07-31 18:55:59 - __main__ - INFO - Data source: eyelink
+2025-07-31 18:55:59 - __main__ - INFO - Initialized classifier: ANNClassifier
+2025-07-31 18:55:59 - __main__ - INFO - Fitting GridSearchCV...

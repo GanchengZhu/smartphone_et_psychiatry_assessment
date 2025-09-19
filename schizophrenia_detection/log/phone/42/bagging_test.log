@@ -1,0 +1,112 @@
+2025-07-15 17:27:11 - __main__ - INFO - Starting training process for bagging
+2025-07-15 17:27:11 - __main__ - INFO - Data source: phone
+2025-07-15 17:27:11 - __main__ - INFO - Initialized classifier: BaggingClassifier
+2025-07-15 17:27:11 - __main__ - INFO - Load best hyperparameters from results/train/phone/42/bagging/best_params.json
+2025-07-15 17:27:11 - __main__ - INFO - Fold 1 completed
+2025-07-15 17:27:11 - __main__ - INFO - Fold 2 completed
+2025-07-15 17:27:11 - __main__ - INFO - Fold 3 completed
+2025-07-15 17:27:11 - __main__ - INFO - Fold 4 completed
+2025-07-15 17:27:12 - __main__ - INFO - Fold 5 completed
+2025-07-15 17:27:12 - __main__ - INFO - Fold 6 completed
+2025-07-15 17:27:12 - __main__ - INFO - Fold 7 completed
+2025-07-15 17:27:12 - __main__ - INFO - Fold 8 completed
+2025-07-15 17:27:12 - __main__ - INFO - Fold 9 completed
+2025-07-15 17:27:13 - __main__ - INFO - Fold 10 completed
+2025-07-15 17:27:13 - __main__ - INFO - Saved CV results to results/test/phone/42\bagging/k_fold.csv
+2025-07-15 17:27:13 - __main__ - INFO - Testing completed successfully
+2025-07-21 11:13:10 - __main__ - INFO - Starting training process for bagging
+2025-07-21 11:13:10 - __main__ - INFO - Data source: phone
+2025-07-21 11:13:10 - __main__ - INFO - Initialized classifier: BaggingClassifier
+2025-07-21 11:13:10 - __main__ - INFO - Load best hyperparameters from results/train/phone/42/bagging/best_params.json
+2025-07-21 11:13:10 - __main__ - INFO - Fold 1 completed
+2025-07-21 11:13:10 - __main__ - INFO - Fold 2 completed
+2025-07-21 11:13:11 - __main__ - INFO - Fold 3 completed
+2025-07-21 11:13:11 - __main__ - INFO - Fold 4 completed
+2025-07-21 11:13:11 - __main__ - INFO - Fold 5 completed
+2025-07-21 11:13:12 - __main__ - INFO - Fold 6 completed
+2025-07-21 11:13:12 - __main__ - INFO - Fold 7 completed
+2025-07-21 11:13:12 - __main__ - INFO - Fold 8 completed
+2025-07-21 11:13:13 - __main__ - INFO - Fold 9 completed
+2025-07-21 11:13:13 - __main__ - INFO - Fold 10 completed
+2025-07-21 11:13:13 - __main__ - INFO - Saved CV results to results/test/phone/42\bagging/k_fold.csv
+2025-07-21 11:13:13 - __main__ - INFO - Testing completed successfully
+2025-07-21 11:14:14 - __main__ - INFO - Starting training process for bagging
+2025-07-21 11:14:14 - __main__ - INFO - Data source: phone
+2025-07-21 11:14:14 - __main__ - INFO - Initialized classifier: BaggingClassifier
+2025-07-21 11:14:14 - __main__ - INFO - Load best hyperparameters from results/train/phone/42/bagging/best_params.json
+2025-07-21 11:14:14 - __main__ - INFO - Fold 1 completed
+2025-07-21 11:14:14 - __main__ - INFO - Fold 2 completed
+2025-07-21 11:14:14 - __main__ - INFO - Fold 3 completed
+2025-07-21 11:14:15 - __main__ - INFO - Fold 4 completed
+2025-07-21 11:14:15 - __main__ - INFO - Fold 5 completed
+2025-07-21 11:14:15 - __main__ - INFO - Fold 6 completed
+2025-07-21 11:14:16 - __main__ - INFO - Fold 7 completed
+2025-07-21 11:14:16 - __main__ - INFO - Fold 8 completed
+2025-07-21 11:14:16 - __main__ - INFO - Fold 9 completed
+2025-07-21 11:14:17 - __main__ - INFO - Fold 10 completed
+2025-07-21 11:14:17 - __main__ - INFO - Saved CV results to results/test/phone/42\bagging/k_fold.csv
+2025-07-21 11:14:17 - __main__ - INFO - Testing completed successfully
+2025-07-30 17:02:11 - __main__ - INFO - Starting training process for bagging
+2025-07-30 17:02:11 - __main__ - INFO - Data source: phone
+2025-07-30 17:02:11 - __main__ - INFO - Initialized classifier: BaggingClassifier
+2025-07-30 17:02:11 - __main__ - INFO - Load best hyperparameters from results_rm/train/phone/42/bagging/best_params.json
+2025-07-30 17:02:11 - __main__ - INFO - Fold 1 completed
+2025-07-30 17:02:11 - __main__ - INFO - Fold 2 completed
+2025-07-30 17:02:11 - __main__ - INFO - Fold 3 completed
+2025-07-30 17:02:12 - __main__ - INFO - Fold 4 completed
+2025-07-30 17:02:12 - __main__ - INFO - Fold 5 completed
+2025-07-30 17:02:12 - __main__ - INFO - Fold 6 completed
+2025-07-30 17:02:12 - __main__ - INFO - Fold 7 completed
+2025-07-30 17:02:13 - __main__ - INFO - Fold 8 completed
+2025-07-30 17:02:13 - __main__ - INFO - Fold 9 completed
+2025-07-30 17:02:13 - __main__ - INFO - Fold 10 completed
+2025-07-30 17:02:13 - __main__ - INFO - Saved CV results to results_rm/test/phone/42\bagging/k_fold.csv
+2025-07-30 17:02:13 - __main__ - INFO - Testing completed successfully
+2025-07-30 17:53:23 - __main__ - INFO - Starting training process for bagging
+2025-07-30 17:53:23 - __main__ - INFO - Data source: phone
+2025-07-30 17:53:23 - __main__ - INFO - Initialized classifier: BaggingClassifier
+2025-07-30 17:53:23 - __main__ - INFO - Load best hyperparameters from results_rm/train/phone/42/bagging/best_params.json
+2025-07-30 17:53:24 - __main__ - INFO - Fold 1 completed
+2025-07-30 17:53:24 - __main__ - INFO - Fold 2 completed
+2025-07-30 17:53:24 - __main__ - INFO - Fold 3 completed
+2025-07-30 17:53:24 - __main__ - INFO - Fold 4 completed
+2025-07-30 17:53:25 - __main__ - INFO - Fold 5 completed
+2025-07-30 17:53:25 - __main__ - INFO - Fold 6 completed
+2025-07-30 17:53:25 - __main__ - INFO - Fold 7 completed
+2025-07-30 17:53:26 - __main__ - INFO - Fold 8 completed
+2025-07-30 17:53:26 - __main__ - INFO - Fold 9 completed
+2025-07-30 17:53:26 - __main__ - INFO - Fold 10 completed
+2025-07-30 17:53:26 - __main__ - INFO - Saved CV results to results_rm/test/phone/42\bagging/k_fold.csv
+2025-07-30 17:53:26 - __main__ - INFO - Testing completed successfully
+2025-07-31 09:10:52 - __main__ - INFO - Starting training process for bagging
+2025-07-31 09:10:52 - __main__ - INFO - Data source: phone
+2025-07-31 09:10:52 - __main__ - INFO - Initialized classifier: BaggingClassifier
+2025-07-31 09:10:52 - __main__ - INFO - Load best hyperparameters from results_rm/train/phone/42/bagging/best_params.json
+2025-07-31 09:10:53 - __main__ - INFO - Fold 1 completed
+2025-07-31 09:10:53 - __main__ - INFO - Fold 2 completed
+2025-07-31 09:10:54 - __main__ - INFO - Fold 3 completed
+2025-07-31 09:10:54 - __main__ - INFO - Fold 4 completed
+2025-07-31 09:10:54 - __main__ - INFO - Fold 5 completed
+2025-07-31 09:10:55 - __main__ - INFO - Fold 6 completed
+2025-07-31 09:10:55 - __main__ - INFO - Fold 7 completed
+2025-07-31 09:10:56 - __main__ - INFO - Fold 8 completed
+2025-07-31 09:10:56 - __main__ - INFO - Fold 9 completed
+2025-07-31 09:10:57 - __main__ - INFO - Fold 10 completed
+2025-07-31 09:10:57 - __main__ - INFO - Saved CV results to results_rm/test/phone/42\bagging/k_fold.csv
+2025-07-31 09:10:57 - __main__ - INFO - Testing completed successfully
+2025-09-13 15:25:23 - __main__ - INFO - Starting training process for bagging
+2025-09-13 15:25:23 - __main__ - INFO - Data source: phone
+2025-09-13 15:25:23 - __main__ - INFO - Initialized classifier: BaggingClassifier
+2025-09-13 15:25:23 - __main__ - INFO - Load best hyperparameters from results/train/phone/42/bagging/best_params.json
+2025-09-13 15:25:25 - __main__ - INFO - Fold 1 completed
+2025-09-13 15:25:26 - __main__ - INFO - Fold 2 completed
+2025-09-13 15:25:27 - __main__ - INFO - Fold 3 completed
+2025-09-13 15:25:28 - __main__ - INFO - Fold 4 completed
+2025-09-13 15:25:29 - __main__ - INFO - Fold 5 completed
+2025-09-13 15:25:30 - __main__ - INFO - Fold 6 completed
+2025-09-13 15:25:31 - __main__ - INFO - Fold 7 completed
+2025-09-13 15:25:33 - __main__ - INFO - Fold 8 completed
+2025-09-13 15:25:34 - __main__ - INFO - Fold 9 completed
+2025-09-13 15:25:35 - __main__ - INFO - Fold 10 completed
+2025-09-13 15:25:35 - __main__ - INFO - Saved CV results to results/test/phone/42\bagging/k_fold.csv
+2025-09-13 15:25:35 - __main__ - INFO - Testing completed successfully

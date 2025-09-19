@@ -1,0 +1,4 @@
+2025-07-31 19:00:46 - __main__ - INFO - Starting training process for kan
+2025-07-31 19:00:46 - __main__ - INFO - Data source: eyelink
+2025-07-31 19:00:46 - __main__ - INFO - Initialized classifier: KANClassifier
+2025-07-31 19:00:46 - __main__ - INFO - Fitting GridSearchCV...

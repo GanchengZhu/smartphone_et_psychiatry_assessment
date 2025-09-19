@@ -1,0 +1,42 @@
+2025-07-15 17:02:16 - __main__ - INFO - Starting training process for rf
+2025-07-15 17:02:16 - __main__ - INFO - Data source: eyelink
+2025-07-15 17:02:16 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-15 17:02:16 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-15 17:11:11 - __main__ - INFO - Best parameters found: {'classifier__max_depth': 5, 'classifier__min_samples_leaf': 2, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 300}
+2025-07-15 17:11:11 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/rf/best_params.json
+2025-07-15 17:11:11 - __main__ - INFO - Training completed successfully
+2025-07-21 11:18:29 - __main__ - INFO - Starting training process for rf
+2025-07-21 11:18:29 - __main__ - INFO - Data source: eyelink
+2025-07-21 11:18:29 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-21 11:18:29 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-21 11:23:36 - __main__ - INFO - Best parameters found: {'classifier__max_depth': 10, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 100}
+2025-07-21 11:23:36 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/rf/best_params.json
+2025-07-21 11:23:36 - __main__ - INFO - Training completed successfully
+2025-07-30 17:06:16 - __main__ - INFO - Starting training process for rf
+2025-07-30 17:06:16 - __main__ - INFO - Data source: eyelink
+2025-07-30 17:06:16 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-30 17:06:16 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-30 17:11:48 - __main__ - INFO - Best parameters found: {'classifier__max_depth': 10, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 500}
+2025-07-30 17:11:48 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/rf/best_params.json
+2025-07-30 17:11:48 - __main__ - INFO - Training completed successfully
+2025-07-30 17:57:14 - __main__ - INFO - Starting training process for rf
+2025-07-30 17:57:14 - __main__ - INFO - Data source: eyelink
+2025-07-30 17:57:14 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-30 17:57:14 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-30 18:02:44 - __main__ - INFO - Best parameters found: {'classifier__max_depth': 10, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 500}
+2025-07-30 18:02:44 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/rf/best_params.json
+2025-07-30 18:02:44 - __main__ - INFO - Training completed successfully
+2025-07-31 09:13:28 - __main__ - INFO - Starting training process for rf
+2025-07-31 09:13:28 - __main__ - INFO - Data source: eyelink
+2025-07-31 09:13:28 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-07-31 09:13:28 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 09:18:42 - __main__ - INFO - Best parameters found: {'classifier__max_depth': 10, 'classifier__min_samples_leaf': 2, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 400}
+2025-07-31 09:18:42 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/rf/best_params.json
+2025-07-31 09:18:42 - __main__ - INFO - Training completed successfully
+2025-09-13 15:00:21 - __main__ - INFO - Starting training process for rf
+2025-09-13 15:00:21 - __main__ - INFO - Data source: eyelink
+2025-09-13 15:00:21 - __main__ - INFO - Initialized classifier: RandomForestClassifier
+2025-09-13 15:00:21 - __main__ - INFO - Fitting GridSearchCV...
+2025-09-13 15:10:23 - __main__ - INFO - Best parameters found: {'classifier__max_depth': 10, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 20, 'classifier__n_estimators': 300}
+2025-09-13 15:10:23 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/rf/best_params.json
+2025-09-13 15:10:23 - __main__ - INFO - Training completed successfully

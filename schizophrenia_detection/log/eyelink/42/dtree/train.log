@@ -1,0 +1,42 @@
+2025-07-15 17:02:05 - __main__ - INFO - Starting training process for dtree
+2025-07-15 17:02:05 - __main__ - INFO - Data source: eyelink
+2025-07-15 17:02:05 - __main__ - INFO - Initialized classifier: DecisionTreeClassifier
+2025-07-15 17:02:05 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-15 17:02:13 - __main__ - INFO - Best parameters found: {'classifier__criterion': 'entropy', 'classifier__max_depth': 13, 'classifier__min_samples_leaf': 4, 'classifier__min_samples_split': 2}
+2025-07-15 17:02:13 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/dtree/best_params.json
+2025-07-15 17:02:13 - __main__ - INFO - Training completed successfully
+2025-07-21 11:18:20 - __main__ - INFO - Starting training process for dtree
+2025-07-21 11:18:20 - __main__ - INFO - Data source: eyelink
+2025-07-21 11:18:20 - __main__ - INFO - Initialized classifier: DecisionTreeClassifier
+2025-07-21 11:18:20 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-21 11:18:27 - __main__ - INFO - Best parameters found: {'classifier__criterion': 'gini', 'classifier__max_depth': 9, 'classifier__min_samples_leaf': 4, 'classifier__min_samples_split': 10}
+2025-07-21 11:18:27 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/dtree/best_params.json
+2025-07-21 11:18:27 - __main__ - INFO - Training completed successfully
+2025-07-30 17:06:03 - __main__ - INFO - Starting training process for dtree
+2025-07-30 17:06:03 - __main__ - INFO - Data source: eyelink
+2025-07-30 17:06:03 - __main__ - INFO - Initialized classifier: DecisionTreeClassifier
+2025-07-30 17:06:03 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-30 17:06:14 - __main__ - INFO - Best parameters found: {'classifier__criterion': 'entropy', 'classifier__max_depth': 5, 'classifier__min_samples_leaf': 8, 'classifier__min_samples_split': 2}
+2025-07-30 17:06:14 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/dtree/best_params.json
+2025-07-30 17:06:14 - __main__ - INFO - Training completed successfully
+2025-07-30 17:57:04 - __main__ - INFO - Starting training process for dtree
+2025-07-30 17:57:04 - __main__ - INFO - Data source: eyelink
+2025-07-30 17:57:04 - __main__ - INFO - Initialized classifier: DecisionTreeClassifier
+2025-07-30 17:57:04 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-30 17:57:11 - __main__ - INFO - Best parameters found: {'classifier__criterion': 'entropy', 'classifier__max_depth': 5, 'classifier__min_samples_leaf': 8, 'classifier__min_samples_split': 2}
+2025-07-30 17:57:11 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/dtree/best_params.json
+2025-07-30 17:57:11 - __main__ - INFO - Training completed successfully
+2025-07-31 09:13:20 - __main__ - INFO - Starting training process for dtree
+2025-07-31 09:13:20 - __main__ - INFO - Data source: eyelink
+2025-07-31 09:13:20 - __main__ - INFO - Initialized classifier: DecisionTreeClassifier
+2025-07-31 09:13:20 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 09:13:26 - __main__ - INFO - Best parameters found: {'classifier__criterion': 'gini', 'classifier__max_depth': 7, 'classifier__min_samples_leaf': 2, 'classifier__min_samples_split': 10}
+2025-07-31 09:13:26 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/dtree/best_params.json
+2025-07-31 09:13:26 - __main__ - INFO - Training completed successfully
+2025-09-13 14:59:53 - __main__ - INFO - Starting training process for dtree
+2025-09-13 14:59:53 - __main__ - INFO - Data source: eyelink
+2025-09-13 14:59:53 - __main__ - INFO - Initialized classifier: DecisionTreeClassifier
+2025-09-13 14:59:53 - __main__ - INFO - Fitting GridSearchCV...
+2025-09-13 15:00:02 - __main__ - INFO - Best parameters found: {'classifier__criterion': 'gini', 'classifier__max_depth': 3, 'classifier__min_samples_leaf': 16, 'classifier__min_samples_split': 2}
+2025-09-13 15:00:02 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/dtree/best_params.json
+2025-09-13 15:00:02 - __main__ - INFO - Training completed successfully

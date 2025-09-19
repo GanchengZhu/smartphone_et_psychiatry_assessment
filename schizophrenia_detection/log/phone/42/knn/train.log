@@ -1,0 +1,42 @@
+2025-07-15 17:12:22 - __main__ - INFO - Starting training process for knn
+2025-07-15 17:12:22 - __main__ - INFO - Data source: phone
+2025-07-15 17:12:22 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-15 17:12:22 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-15 17:12:28 - __main__ - INFO - Best parameters found: {'classifier__metric': 'euclidean', 'classifier__n_neighbors': 8, 'classifier__p': 1, 'classifier__weights': 'distance'}
+2025-07-15 17:12:28 - __main__ - INFO - Saved best parameters to results/train/phone/42/knn/best_params.json
+2025-07-15 17:12:28 - __main__ - INFO - Training completed successfully
+2025-07-21 11:03:41 - __main__ - INFO - Starting training process for knn
+2025-07-21 11:03:41 - __main__ - INFO - Data source: phone
+2025-07-21 11:03:41 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-21 11:03:41 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-21 11:03:46 - __main__ - INFO - Best parameters found: {'classifier__metric': 'manhattan', 'classifier__n_neighbors': 10, 'classifier__p': 1, 'classifier__weights': 'distance'}
+2025-07-21 11:03:46 - __main__ - INFO - Saved best parameters to results/train/phone/42/knn/best_params.json
+2025-07-21 11:03:46 - __main__ - INFO - Training completed successfully
+2025-07-30 16:53:10 - __main__ - INFO - Starting training process for knn
+2025-07-30 16:53:10 - __main__ - INFO - Data source: phone
+2025-07-30 16:53:10 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-30 16:53:10 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-30 16:53:15 - __main__ - INFO - Best parameters found: {'classifier__metric': 'manhattan', 'classifier__n_neighbors': 10, 'classifier__p': 1, 'classifier__weights': 'distance'}
+2025-07-30 16:53:15 - __main__ - INFO - Saved best parameters to results_rm/train/phone/42/knn/best_params.json
+2025-07-30 16:53:15 - __main__ - INFO - Training completed successfully
+2025-07-30 17:44:45 - __main__ - INFO - Starting training process for knn
+2025-07-30 17:44:45 - __main__ - INFO - Data source: phone
+2025-07-30 17:44:45 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-30 17:44:45 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-30 17:44:50 - __main__ - INFO - Best parameters found: {'classifier__metric': 'manhattan', 'classifier__n_neighbors': 10, 'classifier__p': 1, 'classifier__weights': 'distance'}
+2025-07-30 17:44:50 - __main__ - INFO - Saved best parameters to results_rm/train/phone/42/knn/best_params.json
+2025-07-30 17:44:50 - __main__ - INFO - Training completed successfully
+2025-07-31 09:03:00 - __main__ - INFO - Starting training process for knn
+2025-07-31 09:03:00 - __main__ - INFO - Data source: phone
+2025-07-31 09:03:00 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-31 09:03:00 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 09:03:05 - __main__ - INFO - Best parameters found: {'classifier__metric': 'minkowski', 'classifier__n_neighbors': 10, 'classifier__p': 3, 'classifier__weights': 'distance'}
+2025-07-31 09:03:05 - __main__ - INFO - Saved best parameters to results_rm/train/phone/42/knn/best_params.json
+2025-07-31 09:03:05 - __main__ - INFO - Training completed successfully
+2025-09-13 14:59:20 - __main__ - INFO - Starting training process for knn
+2025-09-13 14:59:20 - __main__ - INFO - Data source: phone
+2025-09-13 14:59:20 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-09-13 14:59:20 - __main__ - INFO - Fitting GridSearchCV...
+2025-09-13 14:59:27 - __main__ - INFO - Best parameters found: {'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 4, 'classifier__weights': 'distance'}
+2025-09-13 14:59:27 - __main__ - INFO - Saved best parameters to results/train/phone/42/knn/best_params.json
+2025-09-13 14:59:27 - __main__ - INFO - Training completed successfully

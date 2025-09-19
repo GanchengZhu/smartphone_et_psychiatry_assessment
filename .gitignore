@@ -1,0 +1,16 @@
+schizophrenia_detection/data_eyelink_asc
+schizophrenia_detection/data_phone
+schizophrenia_detection/meta_data
+schizophrenia_detection/results
+schizophrenia_detection/features
+schizophrenia_detection/events
+depression_symptom_detection/events
+depression_symptom_detection/features
+depression_symptom_detection/results
+depression_symptom_detection/ground_truth
+depression_symptom_detection/raw_data
+.idea
+depression_symptom_detection/__pycache__
+schizophrenia_detection/__pycache__
+statistical_analysis/__pycache__
+depression_symptom_detection/filter/__pycache__

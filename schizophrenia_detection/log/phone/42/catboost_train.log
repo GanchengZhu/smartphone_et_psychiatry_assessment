@@ -1,0 +1,7 @@
+2025-07-15 16:57:20 - __main__ - INFO - Starting training process for catboost
+2025-07-15 16:57:20 - __main__ - INFO - Data source: phone
+2025-07-15 16:57:20 - __main__ - INFO - Initialized classifier: CatBoostClassifier
+2025-07-15 16:57:20 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-15 17:00:28 - __main__ - INFO - Best parameters found: {'classifier__depth': 6, 'classifier__iterations': 100, 'classifier__learning_rate': 0.1}
+2025-07-15 17:00:28 - __main__ - INFO - Saved best parameters to results/train/phone/42/catboost/best_params.json
+2025-07-15 17:00:28 - __main__ - INFO - Training completed successfully

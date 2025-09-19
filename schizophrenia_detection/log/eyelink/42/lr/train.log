@@ -1,0 +1,42 @@
+2025-07-15 17:00:42 - __main__ - INFO - Starting training process for lr
+2025-07-15 17:00:42 - __main__ - INFO - Data source: eyelink
+2025-07-15 17:00:42 - __main__ - INFO - Initialized classifier: LogisticRegression
+2025-07-15 17:00:42 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-15 17:01:46 - __main__ - INFO - Best parameters found: {'classifier__C': 3.3614490001087685, 'classifier__penalty': 'l1', 'classifier__solver': 'saga'}
+2025-07-15 17:01:46 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/lr/best_params.json
+2025-07-15 17:01:46 - __main__ - INFO - Training completed successfully
+2025-07-21 11:15:52 - __main__ - INFO - Starting training process for lr
+2025-07-21 11:15:52 - __main__ - INFO - Data source: eyelink
+2025-07-21 11:15:52 - __main__ - INFO - Initialized classifier: LogisticRegression
+2025-07-21 11:15:52 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-21 11:18:04 - __main__ - INFO - Best parameters found: {'classifier__C': 4.145888496832911, 'classifier__penalty': 'l1', 'classifier__solver': 'saga'}
+2025-07-21 11:18:04 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/lr/best_params.json
+2025-07-21 11:18:04 - __main__ - INFO - Training completed successfully
+2025-07-30 17:04:41 - __main__ - INFO - Starting training process for lr
+2025-07-30 17:04:41 - __main__ - INFO - Data source: eyelink
+2025-07-30 17:04:41 - __main__ - INFO - Initialized classifier: LogisticRegression
+2025-07-30 17:04:41 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-30 17:05:43 - __main__ - INFO - Best parameters found: {'classifier__C': 4.213321743847289, 'classifier__penalty': 'l1', 'classifier__solver': 'saga'}
+2025-07-30 17:05:43 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/lr/best_params.json
+2025-07-30 17:05:43 - __main__ - INFO - Training completed successfully
+2025-07-30 17:55:50 - __main__ - INFO - Starting training process for lr
+2025-07-30 17:55:50 - __main__ - INFO - Data source: eyelink
+2025-07-30 17:55:50 - __main__ - INFO - Initialized classifier: LogisticRegression
+2025-07-30 17:55:50 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-30 17:56:47 - __main__ - INFO - Best parameters found: {'classifier__C': 4.213321743847289, 'classifier__penalty': 'l1', 'classifier__solver': 'saga'}
+2025-07-30 17:56:47 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/lr/best_params.json
+2025-07-30 17:56:47 - __main__ - INFO - Training completed successfully
+2025-07-31 09:12:18 - __main__ - INFO - Starting training process for lr
+2025-07-31 09:12:18 - __main__ - INFO - Data source: eyelink
+2025-07-31 09:12:18 - __main__ - INFO - Initialized classifier: LogisticRegression
+2025-07-31 09:12:18 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 09:13:09 - __main__ - INFO - Best parameters found: {'classifier__C': 0.06883952069645496, 'classifier__penalty': 'l2', 'classifier__solver': 'saga'}
+2025-07-31 09:13:09 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/lr/best_params.json
+2025-07-31 09:13:09 - __main__ - INFO - Training completed successfully
+2025-09-13 14:57:47 - __main__ - INFO - Starting training process for lr
+2025-09-13 14:57:47 - __main__ - INFO - Data source: eyelink
+2025-09-13 14:57:47 - __main__ - INFO - Initialized classifier: LogisticRegression
+2025-09-13 14:57:47 - __main__ - INFO - Fitting GridSearchCV...
+2025-09-13 14:59:26 - __main__ - INFO - Best parameters found: {'classifier__C': 0.23086779941871696, 'classifier__penalty': 'l1', 'classifier__solver': 'saga'}
+2025-09-13 14:59:26 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/lr/best_params.json
+2025-09-13 14:59:26 - __main__ - INFO - Training completed successfully

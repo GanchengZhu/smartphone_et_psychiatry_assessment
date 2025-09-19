@@ -1,0 +1,42 @@
+2025-07-15 17:01:49 - __main__ - INFO - Starting training process for knn
+2025-07-15 17:01:49 - __main__ - INFO - Data source: eyelink
+2025-07-15 17:01:49 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-15 17:01:49 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-15 17:01:55 - __main__ - INFO - Best parameters found: {'classifier__metric': 'minkowski', 'classifier__n_neighbors': 8, 'classifier__p': 5, 'classifier__weights': 'distance'}
+2025-07-15 17:01:55 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/knn/best_params.json
+2025-07-15 17:01:55 - __main__ - INFO - Training completed successfully
+2025-07-21 11:18:07 - __main__ - INFO - Starting training process for knn
+2025-07-21 11:18:07 - __main__ - INFO - Data source: eyelink
+2025-07-21 11:18:07 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-21 11:18:07 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-21 11:18:12 - __main__ - INFO - Best parameters found: {'classifier__metric': 'minkowski', 'classifier__n_neighbors': 8, 'classifier__p': 5, 'classifier__weights': 'distance'}
+2025-07-21 11:18:12 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/knn/best_params.json
+2025-07-21 11:18:12 - __main__ - INFO - Training completed successfully
+2025-07-30 17:05:45 - __main__ - INFO - Starting training process for knn
+2025-07-30 17:05:45 - __main__ - INFO - Data source: eyelink
+2025-07-30 17:05:45 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-30 17:05:45 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-30 17:05:54 - __main__ - INFO - Best parameters found: {'classifier__metric': 'manhattan', 'classifier__n_neighbors': 10, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+2025-07-30 17:05:54 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/knn/best_params.json
+2025-07-30 17:05:54 - __main__ - INFO - Training completed successfully
+2025-07-30 17:56:50 - __main__ - INFO - Starting training process for knn
+2025-07-30 17:56:50 - __main__ - INFO - Data source: eyelink
+2025-07-30 17:56:50 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-30 17:56:50 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-30 17:56:55 - __main__ - INFO - Best parameters found: {'classifier__metric': 'manhattan', 'classifier__n_neighbors': 10, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+2025-07-30 17:56:55 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/knn/best_params.json
+2025-07-30 17:56:55 - __main__ - INFO - Training completed successfully
+2025-07-31 09:13:12 - __main__ - INFO - Starting training process for knn
+2025-07-31 09:13:12 - __main__ - INFO - Data source: eyelink
+2025-07-31 09:13:12 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-07-31 09:13:12 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 09:13:17 - __main__ - INFO - Best parameters found: {'classifier__metric': 'manhattan', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+2025-07-31 09:13:17 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/knn/best_params.json
+2025-07-31 09:13:17 - __main__ - INFO - Training completed successfully
+2025-09-13 14:59:30 - __main__ - INFO - Starting training process for knn
+2025-09-13 14:59:30 - __main__ - INFO - Data source: eyelink
+2025-09-13 14:59:30 - __main__ - INFO - Initialized classifier: KNeighborsClassifier
+2025-09-13 14:59:30 - __main__ - INFO - Fitting GridSearchCV...
+2025-09-13 14:59:38 - __main__ - INFO - Best parameters found: {'classifier__metric': 'minkowski', 'classifier__n_neighbors': 8, 'classifier__p': 4, 'classifier__weights': 'uniform'}
+2025-09-13 14:59:38 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/knn/best_params.json
+2025-09-13 14:59:38 - __main__ - INFO - Training completed successfully

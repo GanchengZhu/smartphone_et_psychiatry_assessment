@@ -1,0 +1,7 @@
+2025-07-15 16:57:52 - __main__ - INFO - Starting training process for svm
+2025-07-15 16:57:52 - __main__ - INFO - Data source: eyelink
+2025-07-15 16:57:52 - __main__ - INFO - Initialized classifier: SVC
+2025-07-15 16:57:52 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-15 17:00:39 - __main__ - INFO - Best parameters found: {'classifier__C': 3.1440354715915, 'classifier__gamma': 0.01, 'classifier__kernel': 'rbf'}
+2025-07-15 17:00:39 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/svm/best_params.json
+2025-07-15 17:00:39 - __main__ - INFO - Training completed successfully

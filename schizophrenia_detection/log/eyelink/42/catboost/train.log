@@ -1,0 +1,42 @@
+2025-07-15 17:17:03 - __main__ - INFO - Starting training process for catboost
+2025-07-15 17:17:03 - __main__ - INFO - Data source: eyelink
+2025-07-15 17:17:03 - __main__ - INFO - Initialized classifier: CatBoostClassifier
+2025-07-15 17:17:03 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-15 17:20:45 - __main__ - INFO - Best parameters found: {'classifier__depth': 4, 'classifier__iterations': 100, 'classifier__learning_rate': 0.05}
+2025-07-15 17:20:45 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/catboost/best_params.json
+2025-07-15 17:20:45 - __main__ - INFO - Training completed successfully
+2025-07-21 11:15:37 - __main__ - INFO - Starting training process for catboost
+2025-07-21 11:15:37 - __main__ - INFO - Data source: eyelink
+2025-07-21 11:15:37 - __main__ - INFO - Initialized classifier: CatBoostClassifier
+2025-07-21 11:15:37 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-21 11:17:27 - __main__ - INFO - Best parameters found: {'classifier__depth': 4, 'classifier__iterations': 500, 'classifier__learning_rate': 0.01}
+2025-07-21 11:17:27 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/catboost/best_params.json
+2025-07-21 11:17:27 - __main__ - INFO - Training completed successfully
+2025-07-30 17:12:38 - __main__ - INFO - Starting training process for catboost
+2025-07-30 17:12:38 - __main__ - INFO - Data source: eyelink
+2025-07-30 17:12:38 - __main__ - INFO - Initialized classifier: CatBoostClassifier
+2025-07-30 17:12:38 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-30 17:14:21 - __main__ - INFO - Best parameters found: {'classifier__depth': 4, 'classifier__iterations': 500, 'classifier__learning_rate': 0.1}
+2025-07-30 17:14:21 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/catboost/best_params.json
+2025-07-30 17:14:21 - __main__ - INFO - Training completed successfully
+2025-07-30 18:03:28 - __main__ - INFO - Starting training process for catboost
+2025-07-30 18:03:28 - __main__ - INFO - Data source: eyelink
+2025-07-30 18:03:28 - __main__ - INFO - Initialized classifier: CatBoostClassifier
+2025-07-30 18:03:28 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-30 18:05:10 - __main__ - INFO - Best parameters found: {'classifier__depth': 4, 'classifier__iterations': 500, 'classifier__learning_rate': 0.1}
+2025-07-30 18:05:10 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/catboost/best_params.json
+2025-07-30 18:05:10 - __main__ - INFO - Training completed successfully
+2025-07-31 09:19:20 - __main__ - INFO - Starting training process for catboost
+2025-07-31 09:19:20 - __main__ - INFO - Data source: eyelink
+2025-07-31 09:19:20 - __main__ - INFO - Initialized classifier: CatBoostClassifier
+2025-07-31 09:19:20 - __main__ - INFO - Fitting GridSearchCV...
+2025-07-31 09:20:50 - __main__ - INFO - Best parameters found: {'classifier__depth': 2, 'classifier__iterations': 100, 'classifier__learning_rate': 0.1}
+2025-07-31 09:20:50 - __main__ - INFO - Saved best parameters to results_rm/train/eyelink/42/catboost/best_params.json
+2025-07-31 09:20:50 - __main__ - INFO - Training completed successfully
+2025-09-13 15:21:32 - __main__ - INFO - Starting training process for catboost
+2025-09-13 15:21:32 - __main__ - INFO - Data source: eyelink
+2025-09-13 15:21:32 - __main__ - INFO - Initialized classifier: CatBoostClassifier
+2025-09-13 15:21:32 - __main__ - INFO - Fitting GridSearchCV...
+2025-09-13 15:24:36 - __main__ - INFO - Best parameters found: {'classifier__depth': 2, 'classifier__iterations': 200, 'classifier__learning_rate': 0.05}
+2025-09-13 15:24:36 - __main__ - INFO - Saved best parameters to results/train/eyelink/42/catboost/best_params.json
+2025-09-13 15:24:36 - __main__ - INFO - Training completed successfully
