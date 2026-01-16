@@ -17,17 +17,13 @@ def depression_label(row):
 
 dep_folder = Path(dep_dir)
 
-fv_fix_feature_path = dep_folder / 'features' / 'fv_fixation_features.csv'
-fv_sac_feature_path = dep_folder / 'features' / 'fv_saccade_features.csv'
+feature_path = dep_folder / 'features' / 'depression_eyetracking_features.csv'
 scale_score_path = dep_folder / 'ground_truth' / 'scale_scores.csv'
 
 # Load features and ground truth
-fv_fix = pd.read_csv(fv_fix_feature_path)
-fv_sac = pd.read_csv(fv_sac_feature_path)
+features_df = pd.read_csv(feature_path)
 scale_scores = pd.read_csv(scale_score_path)
 
-# Merge fixation and saccade features
-features_df = pd.merge(fv_fix, fv_sac, how='left', on='subj')
 features_df['subj'] = features_df['subj'].astype(str).str.lower()
 scale_scores['subj'] = scale_scores['subj'].astype(str).str.lower()
 
@@ -37,9 +33,6 @@ scale_scores.sort_values(by='subj', ascending=False, inplace=True)
 
 # Check data integrity
 assert np.unique(scale_scores.subj.values).size == np.unique(features_df.subj.values).size == 631
-
-print("Free viewing feature shape: ", features_df.shape)
-print("Scale score shape: ", scale_scores.shape)
 
 # Generate binary depression and anxiety labels
 scale_scores['PHQ9_binary'] = scale_scores['PHQ9'].apply(lambda x: 0 if x < 10 else 1)

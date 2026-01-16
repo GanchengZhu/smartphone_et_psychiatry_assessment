@@ -10,7 +10,7 @@ from matplotlib import pyplot as plt
 from numpy.lib.stride_tricks import sliding_window_view  # 新增滑动窗口计算
 from scipy.stats import ttest_ind
 
-from depression_symptom_detection import dep_dir
+from depression_symptom_detection_bk import dep_dir
 from schizophrenia_detection import sz_dir
 
 

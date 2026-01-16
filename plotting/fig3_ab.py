@@ -1,7 +1,7 @@
 # _*_ coding: utf-8 _*_
 # Author: GC Zhu
 # Email: zhugc2016@gmail.com
-
+import json
 import os
 
 import matplotlib.pyplot as plt
@@ -27,10 +27,10 @@ plt.rcParams.update({
 })
 
 # 分类器及映射
-classifiers = ['bagging', 'catboost', 'dtree', 'knn', 'lr', 'nb', 'rf', 'svm']
+classifiers = ['emprotonet', 'catboost', 'dtree', 'knn', 'lr', 'nb', 'rf', 'svm', 'bagging', ]
 classifier_name_map = {
     'bagging': 'BAG', 'catboost': 'CB', 'dtree': 'DT', 'knn': 'KNN',
-    'lr': 'LR', 'nb': 'NB', 'rf': 'RF', 'svm': 'SVM'
+    'lr': 'LR', 'nb': 'NB', 'rf': 'RF', 'svm': 'SVM', 'emprotonet': 'EMPN'
 }
 metric_label_map = {
     'accuracy': 'Accuracy',
@@ -47,43 +47,30 @@ NATURE_COLORS = [
 ]
 plt.set_cmap("coolwarm")
 
-# =========================
-# 数据预处理函数
-# =========================
+
 def load_results(base_path, devices):
-    results = {f'{clf}_{device}': [] for device in devices for clf in classifiers}
+    records = []
     for device in devices:
         seed_path = os.path.join(base_path, device, '42')
         for clf in classifiers:
-            clf_path = os.path.join(seed_path, clf, 'k_fold.csv')
+            clf_path = os.path.join(seed_path, clf, 'test_results.json')
             if os.path.exists(clf_path):
-                df = pd.read_csv(clf_path)
-                df_sorted = df.sort_values(by=['val_recall', 'val_f1', 'val_auc', 'val_mcc', 'val_accuracy'],
-                                           ascending=False)
-                best_row = df_sorted.iloc[0]
-                results[f'{clf}_{device}'].append(best_row.to_dict())
+                with open(clf_path, 'r') as f:
+                    json_data = json.load(f)
+                accuracy = json_data.get('accuracy')
+                precision = json_data.get('precision')
+                recall = json_data.get('recall')
+
+                # 添加每条记录
+                clf_name = classifier_name_map[clf]
+                records.append({'Classifier': clf_name, 'Metric': 'Accuracy', 'Score': accuracy, 'Device': device})
+                records.append({'Classifier': clf_name, 'Metric': 'Precision', 'Score': precision, 'Device': device})
+                records.append({'Classifier': clf_name, 'Metric': 'Recall', 'Score': recall, 'Device': device})
             else:
-                raise Exception(f"Not found {clf_path}")
-    return results
+                raise FileNotFoundError(f"Not found: {clf_path}")
 
-
-def prepare_plot_data(results_dict, device, label):
-    data = []
-    for clf in classifiers:
-        key = f'{clf}_{device}'
-        if results_dict[key]:
-            df_row = pd.DataFrame(results_dict[key]).iloc[0]
-            for metric in metrics_plotting:
-                data.append({
-                    'Classifier': classifier_name_map[clf],
-                    'Metric': metric_label_map[metric],
-                    'Score': df_row.get(metric),
-                    'Device': label
-                })
-    df = pd.DataFrame(data)
-    df['Metric'] = pd.Categorical(df['Metric'], categories=['Accuracy', 'Precision', 'Recall'], ordered=True)
+    df = pd.DataFrame(records)
     return df
-
 
 # =========================
 # 图像排版参数
@@ -109,13 +96,12 @@ b_pos = [2 * w1_frac + 4.5 * m, bottom, w1_frac, h]
 sz_base = f'{sz_dir}/results/test'
 dep_base = f'{dep_dir}/results/test'
 
-sz_results = load_results(sz_base, ['phone', 'eyelink'])
-dep_results = load_results(dep_base, ['overlap_depression'])
-
-df_a1 = prepare_plot_data(sz_results, 'phone', 'Smartphone, SZ')
-df_a2 = prepare_plot_data(sz_results, 'eyelink', 'EyeLink, SZ')
-df_b = prepare_plot_data(dep_results, 'overlap_depression', 'Depression')
-
+df_a1 = load_results(sz_base, ['phone'])
+df_a2 = load_results(sz_base, ['eyelink'])
+df_b = load_results(dep_base, ['overlap_depression'])
+print(df_a1)
+print(df_a2)
+print(df_b)
 
 # =========================
 # 绘图函数
@@ -140,11 +126,11 @@ def plot_bar(df, ax, show_ylabel=False, label_text=''):
     for j in range(1, len(classifiers)):
         ax.axvline(x=j - 0.5, color='gray', linestyle=':', alpha=0.3, linewidth=0.6)
 
-    ax.set_ylim(0, 1)
     ax.set_yticks([i / 10 for i in range(11)])
     ax.set_yticklabels([f'{i / 10:.1f}' for i in range(11)])
     ax.set_xlabel('')
     ax.set_ylabel('Score' if show_ylabel else '')
+    ax.set_ylim(0, 1)
     ax.tick_params(labelsize=6)
     ax.yaxis.grid(True, linestyle='--', alpha=0.4, linewidth=0.5)
     ax.set_title('')

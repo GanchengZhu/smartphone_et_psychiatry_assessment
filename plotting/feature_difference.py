@@ -6,7 +6,7 @@ import pandas as pd
 from scipy.stats import ttest_ind
 from statsmodels.stats.multitest import multipletests
 
-from depression_symptom_detection import data_reader
+from depression_symptom_detection_bk import data_reader
 
 # 假设 scale_scores 中有 'subj' 和 'label' 列，label=1 为症状组，0 为对照组
 # 合并标签到 features

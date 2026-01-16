@@ -6,10 +6,21 @@ import json
 import logging
 import os
 import sys
+import warnings
+
+warnings.filterwarnings("ignore")
 
 import numpy as np
+
+try:
+    from sklearnex import patch_sklearn
+
+    patch_sklearn()
+    print("Using Intel-optimized scikit-learn")
+except ImportError:
+    print("scikit-learn-intelex not found, using standard scikit-learn")
+
 from catboost import CatBoostClassifier
-from lightgbm import LGBMClassifier
 from sklearn.ensemble import BaggingClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
@@ -22,6 +33,7 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 
 import data_reader
+
 
 def train(X, y, args):
     logger.info(f"Starting training process for {args.classifier}")
@@ -42,7 +54,6 @@ def train(X, y, args):
         'nb': GaussianNB(),
         'dtree': DecisionTreeClassifier(random_state=args.random_seed),
         'rf': RandomForestClassifier(n_estimators=100, random_state=args.random_seed, n_jobs=-1),
-        # 'lgbm': LGBMClassifier(n_jobs=-1, random_state=args.random_seed),
         'bagging': BaggingClassifier(n_estimators=100, random_state=args.random_seed, n_jobs=-1),
         'catboost': CatBoostClassifier(eval_metric="F1", task_type='CPU', random_seed=args.random_seed, verbose=False),
     }
@@ -62,7 +73,7 @@ def train(X, y, args):
     if args.classifier == 'svm':
         param_grid.update({
             'classifier__C': np.logspace(-3, 3, 200),
-            'classifier__kernel': ['linear', 'rbf', 'sigmoid'],
+            'classifier__kernel': ['rbf'],
             'classifier__gamma': ['scale', 'auto'] + list(np.logspace(-3, 3, 7)),
         })
 
@@ -95,20 +106,6 @@ def train(X, y, args):
             'classifier__criterion': ['gini', 'entropy'],
         })
 
-    elif args.classifier == 'lgbm':
-        param_grid.update({
-            'classifier__learning_rate': [0.01, 0.05, 0.1],
-            'classifier__n_estimators': [100, 200, 300],  # 扩展上限
-            'classifier__num_leaves': [15, 31, 63],
-            'classifier__max_bin': [200, 255],
-            'classifier__colsample_bytree': [0.6, 0.8, 1.0],
-            'classifier__subsample': [0.6, 0.8, 1.0],
-            'classifier__reg_alpha': [0, 0.05, 0.1, 0.5, 1],  # 细化
-            'classifier__reg_lambda': [0, 0.05, 0.1, 0.5, 1],
-            'classifier__max_depth': [5, 7, -1],  # 新增
-            'classifier__min_child_samples': [10, 20]  # 新增
-        })
-
     elif args.classifier == 'rf':
         param_grid.update({
             'classifier__n_estimators': [100, 200, 300, 400, 500],
@@ -116,16 +113,6 @@ def train(X, y, args):
             'classifier__min_samples_split': [2, 5, 10, 20],
             'classifier__min_samples_leaf': [1, 2, 4, 8],
         })
-
-    # elif args.classifier == 'rf':
-    #     param_grid.update({
-    #         'classifier__n_estimators': [100, 200, 300],  # 缩减为关键值
-    #         'classifier__max_depth': [10, 20, None],  # 保留典型深度
-    #         'classifier__min_samples_split': [2, 5, 10],
-    #         'classifier__min_samples_leaf': [1, 2, 4],
-    #         'classifier__max_features': ['sqrt', 0.5, 0.8],
-    #         'classifier__max_samples': [0.6, 0.8, None]
-    #     })
 
     elif args.classifier == 'bagging':
         param_grid.update({
@@ -142,35 +129,10 @@ def train(X, y, args):
             # 'classifier__min_data_in_leaf': [1, 5, 10]  # 叶节点最小数据量
         })
 
-    elif args.classifier == 'ann':
-        param_grid.update({
-            'classifier__hidden_layer_sizes': [(50,), (100,), (50, 50), (100, 50)],
-            'classifier__activation': ['relu', 'tanh', 'sigmoid'],
-            'classifier__learning_rate': [0.001, 0.01, 0.1],
-            'classifier__batch_size': [32, 64],
-            'classifier__epochs': [50, 100, 200],
-            'classifier__dropout_rate': [0.1, 0.2, 0.3],
-        })
-
-    elif args.classifier == 'kan':
-        param_grid.update({
-            'classifier__hidden_layer_sizes': [(50,), (100,), (50, 50), (100, 50)],
-            'classifier__activation': ['relu', 'tanh', 'sigmoid'],
-            'classifier__learning_rate': [0.001, 0.01, 0.1],
-            'classifier__batch_size': [32, 64],
-            'classifier__epochs': [50, 100, 200],
-            'classifier__dropout_rate': [0.1, 0.2, 0.3],
-            'classifier__grid_size': [2, 3, 5],
-            'classifier__spline_order': [1, 2, 3],
-        })
-
     else:
         pass
 
     # logger.info("Starting grid search with parameters:\n%s", json.dumps(param_grid, indent=2))
-    n_jobs = -1
-    if classifier == 'ann' or classifier == 'kan':
-        n_jobs = 1
     # Grid Search
     grid_search = GridSearchCV(
         pipeline,
@@ -178,32 +140,26 @@ def train(X, y, args):
         cv=s_k_fold,
         scoring='roc_auc',
         refit=False,
-        n_jobs=n_jobs,
+        n_jobs=-1,
         verbose=0
     )
     logger.info("Fitting GridSearchCV...")
     y = y.astype(int)
     grid_search.fit(X, y)
     logger.info(f"Best parameters found: {grid_search.best_params_}")
-    # logger.info(f"Best cross-validation score: {grid_search.best_score_:.4f}")
 
     # Save results
     best_params_path = f"{output_path}/best_params.json"
-    # best_model_path = os.path.join(output_path, 'model.joblib')
-
     with open(best_params_path, 'w') as f:
         json.dump(grid_search.best_params_, f)
-    # joblib.dump(grid_search.best_estimator_, best_model_path)
-
     logger.info(f"Saved best parameters to {best_params_path}")
-    # logger.info(f"Saved best model to {best_model_path}")
 
 
 if __name__ == '__main__':
     # Parse arguments first
     parser = argparse.ArgumentParser(description='Train a sklearn classifier')
     parser.add_argument('--classifier', type=str, required=True,
-                        choices=['svm', 'lr', 'knn', 'nb', 'dtree', 'rf',  'bagging', 'catboost', ], )
+                        choices=['svm', 'lr', 'knn', 'nb', 'dtree', 'rf', 'bagging', 'catboost'], )
     parser.add_argument('--data_source', choices=['phone', 'eyelink'], type=str, required=True)
     parser.add_argument('--random_seed', type=int, default=42, required=False)
     # parser.add_argument('--gpu', type=str, default='0', help='Set GPU device ID')

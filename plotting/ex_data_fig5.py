@@ -22,8 +22,8 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from xgboost import XGBClassifier
 
-from depression_symptom_detection import data_reader
-from depression_symptom_detection import dep_dir
+from depression_symptom_detection_bk import data_reader
+from depression_symptom_detection_bk import dep_dir
 
 # ====================
 # CONSTANTS

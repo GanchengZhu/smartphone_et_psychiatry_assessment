@@ -3,6 +3,7 @@
 # Email: zhugc2016@gmail.com
 import json
 import os
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -11,7 +12,6 @@ from catboost import CatBoostClassifier
 from lightgbm import LGBMClassifier
 from sklearn.ensemble import BaggingClassifier, RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import recall_score, precision_score
 from sklearn.model_selection import StratifiedKFold
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
@@ -24,10 +24,10 @@ from xgboost import XGBClassifier
 from schizophrenia_detection import sz_dir, data_reader
 
 # ------------------ 配置 ------------------
-classifiers = ['bagging', 'catboost', 'dtree', 'knn', 'lr', 'nb', 'rf', 'svm']
+classifiers = ['emprotonet', 'catboost', 'dtree', 'knn', 'lr', 'nb', 'rf', 'svm', 'bagging']
 classifier_name_map = {
     'bagging': 'BAG', 'catboost': 'CB', 'dtree': 'DT', 'knn': 'KNN',
-    'lr': 'LR', 'nb': 'NB', 'rf': 'RF', 'svm': 'SVM'
+    'lr': 'LR', 'nb': 'NB', 'rf': 'RF', 'svm': 'SVM', 'emprotonet': 'EMPN'
 }
 metrics_priority = ['val_recall', 'val_f1', 'val_auc', 'val_mcc', 'val_accuracy']
 
@@ -120,10 +120,16 @@ for device in ['phone', 'eyelink']:
             best_row = df_sorted.iloc[0]
             fold_id_dict[f'{clf}_{device}'] = best_row['fold']
 
-# ------------------ 计算 Precision 和 Recall ------------------
+# ------------------ 计算 Precision、Recall 和 Accuracy ------------------
 metrics_dict = {
-    'phone': {'test': {'precision': [], 'recall': []}, 'retest': {'precision': [], 'recall': []}},
-    'eyelink': {'test': {'precision': [], 'recall': []}, 'retest': {'precision': [], 'recall': []}}
+    'phone': {
+        'test': {'accuracy': [], 'precision': [], 'recall': []},
+        'retest': {'accuracy': [], 'precision': [], 'recall': []}
+    },
+    'eyelink': {
+        'test': {'accuracy': [], 'precision': [], 'recall': []},
+        'retest': {'accuracy': [], 'precision': [], 'recall': []}
+    }
 }
 
 for device in ['phone', 'eyelink']:
@@ -132,39 +138,20 @@ for device in ['phone', 'eyelink']:
     )
 
     for classifier in tqdm.tqdm(classifiers):
-        # Test
-        result_test = ml(
-            train_X=X_train, train_y=y_train,
-            rm_X=X_test, rm_y=y_test,
-            device=device, random_seed=random_seed,
-            classifier=classifier, fold_id_dict=fold_id_dict
-        )
-        if result_test is not None:
-            y_true, y_pre, _ = result_test
-            metrics_dict[device]['test']['recall'].append(recall_score(y_true, y_pre) * 100)
-            metrics_dict[device]['test']['precision'].append(precision_score(y_true, y_pre) * 100)
-        else:
-            # 添加占位值
-            metrics_dict[device]['test']['recall'].append(0)
-            metrics_dict[device]['test']['precision'].append(0)
+        for task in ['test', 'retest']:
+            clf_path = os.path.join(sz_dir, 'results', task, device, '42', classifier, 'test_results.json')
+            print(clf_path)
+            if os.path.exists(clf_path):
+                with open(clf_path, 'r') as f:
+                    json_data = json.load(f)
+                    accuracy = json_data.get('accuracy')
+                    precision = json_data.get('precision')
+                    recall = json_data.get('recall')
+                    metrics_dict[device][task]['accuracy'].append(accuracy * 100)
+                    metrics_dict[device][task]['precision'].append(precision * 100)
+                    metrics_dict[device][task]['recall'].append(recall * 100)
 
-        # Retest
-        result_retest = ml(
-            train_X=X_train, train_y=y_train,
-            rm_X=X_retest, rm_y=y_retest,
-            device=device, random_seed=random_seed,
-            classifier=classifier, fold_id_dict=fold_id_dict
-        )
-        if result_retest is not None:
-            y_true, y_pre, _ = result_retest
-            metrics_dict[device]['retest']['recall'].append(recall_score(y_true, y_pre) * 100)
-            metrics_dict[device]['retest']['precision'].append(precision_score(y_true, y_pre) * 100)
-        else:
-            # 添加占位值
-            metrics_dict[device]['retest']['recall'].append(0)
-            metrics_dict[device]['retest']['precision'].append(0)
-
-# ------------------ 绘制 2x2 Nature 风格子图 ------------------
+# ------------------ 绘制 2x3 Nature 风格子图 ------------------
 # 为不同设备定义不同的颜色方案
 phone_colors = {
     'test': '#1f77b4',  # 深蓝色
@@ -176,17 +163,19 @@ eyelink_colors = {
     'retest': '#ff9896'  # 浅红色
 }
 
-# 创建图形
-fig, axs = plt.subplots(2, 2, figsize=(6.4, 5.2))
+# 创建图形（2行3列：Accuracy, Precision, Recall）
+fig, axs = plt.subplots(2, 3, figsize=(9.6, 5.2))
 bar_width = 0.35
 x = np.arange(len(classifiers))
 
-sub_labels = ['a', 'b', 'c', 'd']
+sub_labels = ['a', 'b', 'c', 'd', 'e', 'f']
 plot_info = [
-    ('Precision', 'phone', 0, 0),
-    ('Precision', 'eyelink', 0, 1),
-    ('Recall', 'phone', 1, 0),
-    ('Recall', 'eyelink', 1, 1)
+    ('Accuracy', 'phone', 0, 0),
+    ('Precision', 'phone', 0, 1),
+    ('Recall', 'phone', 0, 2),
+    ('Accuracy', 'eyelink', 1, 0),
+    ('Precision', 'eyelink', 1, 1),
+    ('Recall', 'eyelink', 1, 2)
 ]
 
 for idx, (metric, device, row_idx, col_idx) in enumerate(plot_info):
@@ -205,35 +194,48 @@ for idx, (metric, device, row_idx, col_idx) in enumerate(plot_info):
     bars_retest = ax.bar(x + bar_width / 2, retest_data, bar_width,
                          label='Retest', color=colors['retest'], alpha=0.75)
 
-    # 数值标注
     # 数值标注（带自动错开逻辑）
     for i, (test_val, retest_val) in enumerate(zip(test_data, retest_data)):
         offset_test = 1.0
         offset_retest = 1.0
+
+        # 设置不同的Y轴范围
+        if metric == 'Accuracy':
+            ax.set_ylim(40, 100)
+        elif metric == 'Precision':
+            ax.set_ylim(40, 100)
+        elif metric == 'Recall':
+            ax.set_ylim(30, 100)
+
         # 如果两个柱子差距很小，避免重叠 → 自动错开
         if abs(test_val - retest_val) < 3:
             offset_test = 5.0
             offset_retest = 1.0
 
-        ax.text(i - bar_width / 2, test_val + offset_test, f'{test_val:.2f}',
+        ax.text(i - bar_width / 2, test_val + offset_test, f'{test_val:.1f}',
                 ha='center', va='bottom', fontsize=5)
-        ax.text(i + bar_width / 2, retest_val + offset_retest, f'{retest_val:.2f}',
+        ax.text(i + bar_width / 2, retest_val + offset_retest, f'{retest_val:.1f}',
                 ha='center', va='bottom', fontsize=5)
 
-    # 设置轴标签和标题
+    # 设置轴标签
     ax.set_xticks(x)
     ax.set_xticklabels([classifier_name_map[c] for c in classifiers], rotation=45)
     ax.set_ylabel(f'{metric} (%)')
-    ax.set_ylim(30, 100)
 
-    # 添加子图标签 (a, b, c, d)
+    # 添加子图标签 (a, b, c, d, e, f)
     ax.text(-0.17, 1.10, sub_labels[idx], transform=ax.transAxes,
             fontsize=10, fontweight='bold', va='top')
 
-    # 添加设备名称
-    device_name = 'Smartphone' if device == 'phone' else 'EyeLink'
-    ax.text(0.5, -0.18, device_name, transform=ax.transAxes,
-            fontsize=6, ha='center', va='top', fontweight='bold')
+    # 如果是第一行，添加指标名称作为标题
+    if row_idx == 0:
+        ax.set_title(f'{metric}', fontsize=7, fontweight='bold')
+
+    # 如果是第一列，添加设备名称作为y轴标签
+    if col_idx == 0:
+        device_name = 'Smartphone' if device == 'phone' else 'EyeLink'
+        ax.text(-0.25, 0.5, device_name, transform=ax.transAxes,
+                fontsize=7, ha='center', va='center', rotation=90,
+                fontweight='bold')
 
     # 设置网格
     ax.grid(True, axis='y', linestyle='--', alpha=0.3)
@@ -242,11 +244,23 @@ for idx, (metric, device, row_idx, col_idx) in enumerate(plot_info):
     ax.spines['right'].set_visible(False)
     ax.spines['top'].set_visible(False)
 
-    # 在每个子图内添加图例
-    ax.legend(loc='upper right', fontsize=5, frameon=False)
+    # 只在左上角子图添加图例
+    if row_idx == 0 and col_idx == 0:
+        ax.legend(loc='upper right', fontsize=5, frameon=False)
 
-plt.tight_layout()
-plt.savefig(f'{save_dir}/precision_recall_2x2_nature.tiff', format='tiff', bbox_inches='tight')
-# plt.savefig(f'{save_dir}/precision_recall_2x2_nature.pdf', format='pdf', bbox_inches='tight')
+# 调整布局，给设备名称留出空间
+plt.subplots_adjust(wspace=0.25, hspace=0.25, left=0.1, right=0.95, top=0.9, bottom=0.15)
+
+# 保存图形
+plt.savefig(f'{save_dir}/metrics_2x3_nature.tiff', format='tiff', bbox_inches='tight')
+# plt.savefig(f'{save_dir}/metrics_2x3_nature.pdf', format='pdf', bbox_inches='tight')
 plt.close()
-print(metrics_dict)
+
+print("图表已保存到:", save_dir)
+print("数据结构:")
+for device in metrics_dict:
+    print(f"\n{device}:")
+    for task in metrics_dict[device]:
+        print(f"  {task}:")
+        for metric in metrics_dict[device][task]:
+            print(f"    {metric}: {metrics_dict[device][task][metric]}")

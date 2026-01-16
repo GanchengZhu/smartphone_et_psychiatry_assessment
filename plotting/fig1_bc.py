@@ -14,7 +14,7 @@ import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt, gridspec
 
-from depression_symptom_detection import dep_dir
+from depression_symptom_detection_bk import dep_dir
 from schizophrenia_detection import sz_dir
 
 

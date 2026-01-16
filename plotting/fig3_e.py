@@ -15,7 +15,6 @@ from sklearn.ensemble import RandomForestClassifier, BaggingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (accuracy_score, f1_score,
                              precision_score, recall_score, roc_auc_score)
-from sklearn.model_selection import StratifiedKFold
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.pipeline import Pipeline
@@ -31,7 +30,8 @@ classifier_name_map = {
     'rf': 'RF',
     'catboost': 'CB',
     'bagging': "BAG",
-    'lr': "LR"
+    'lr': "LR",
+    'svm': "SVM"
 }
 
 device_label_map = {
@@ -52,24 +52,13 @@ colors = [
     "#d62728"
 ]
 
-# 创建连续渐变 colormap
 custom_cmap = LinearSegmentedColormap.from_list("custom_gradient", colors)
 
 random_state = 42
-
-metrics_priority = ['val_recall', 'val_f1', 'val_auc', 'val_mcc', 'val_accuracy']
-
 save_dir = os.path.join(os.path.dirname(__file__), 'fig_3')
-# shap_save_dir = 'plotting/fig_4/fig_shap'
-# eval_save_dir = 'plotting/fig_4/fig_eval'
-# os.makedirs(roc_save_dir, exist_ok=True)
-# os.makedirs(shap_save_dir, exist_ok=True)
 os.makedirs(save_dir, exist_ok=True)
 
 
-# -------------------
-# 🔧 辅助函数
-# -------------------
 def load_hyper_parameters(best_param_json_path):
     if not os.path.exists(best_param_json_path):
         warnings.warn(f"未找到参数文件: {best_param_json_path}")
@@ -88,12 +77,9 @@ def train_model(
         train_y: pd.Series,
         device: str,
         classifier: str,
-        fold_id: int
 ):
     sd = StandardScaler()
     X_train_scaled = sd.fit_transform(X_train)
-
-    skf = StratifiedKFold(n_splits=10, shuffle=True, random_state=random_state)
 
     classifier_map = {
         'svm': SVC(kernel='rbf', C=1.0, random_state=random_state, probability=True),
@@ -113,12 +99,7 @@ def train_model(
     best_param_json_path = f"{sz_dir}/results/train/{device}/42/{classifier}/best_params.json"
     param_dict = load_hyper_parameters(best_param_json_path)
     pipeline.set_params(**param_dict)
-
-    for fold_idx, (train_idx, _) in enumerate(skf.split(X_train_scaled, train_y)):
-        if fold_idx + 1 != fold_id:
-            continue
-        pipeline.fit(X_train_scaled[train_idx], train_y[train_idx])
-        break
+    pipeline.fit(X_train_scaled, train_y)
 
     return pipeline, sd
 
@@ -211,7 +192,7 @@ def shap_summary_plot(
 # -------------------
 def main():
     random_seed = 42
-    targets = [('phone', 'catboost'), ('eyelink', 'catboost')]
+    targets = [('phone', 'svm'), ('eyelink', 'svm')]
 
     for device, classifier in targets:
         X_train, X_test, y_train, y_test, _, _, feature_names = data_reader.split_data(
@@ -219,18 +200,7 @@ def main():
 
         new_feature_names = [sz_feature_name_map[feature] for feature in feature_names]
 
-        clf_path = f'{sz_dir}/results/test/{device}/{random_seed}/{classifier}/k_fold.csv'
-        if not os.path.exists(clf_path):
-            print(f"[SKIP] The file is not found: {clf_path}")
-            continue
-
-        df = pd.read_csv(clf_path)
-        valid_metrics = [col for col in metrics_priority if col in df.columns]
-        df_sorted = df.sort_values(by=valid_metrics, ascending=False)
-        fold_id = df_sorted.iloc[0]['fold']
-
-        # 📊 模型评估
-        pipeline, sd = train_model(X_train, y_train, device, classifier, fold_id)
+        pipeline, sd = train_model(X_train, y_train, device, classifier)
         eval_metrics = evaluate_model(pipeline, sd, X_test, y_test)
         X_train_scaled = sd.transform(X_train)
         X_test_scaled = sd.transform(X_test)
@@ -241,7 +211,6 @@ def main():
             shap_save_path,
         )
 
-        # 📝 打印评估结果
         print(f"\n📊 Test Evaluation - {device_label_map[device]} ({classifier_name_map[classifier]})")
         for metric, value in eval_metrics.items():
             print(f"{metric}: {value:.4f}")

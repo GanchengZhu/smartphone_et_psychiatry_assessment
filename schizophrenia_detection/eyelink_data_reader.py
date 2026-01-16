@@ -243,4 +243,33 @@ def split_data(random_seed=42, retest_train_include=False):
 
 
 if __name__ == '__main__':
-    X_train, X_test, y_train, y_test, X_rm, y_rm, _ = split_data()
+    X_train, X_test, y_train, y_test, X_rm, y_rm, feature_names = split_data()
+
+    # 新建保存文件夹
+    save_dir = os.path.join(os.path.dirname(__file__), "dl_dataset")
+    os.makedirs(save_dir, exist_ok=True)
+
+    # 转为表格
+    df_train = pd.DataFrame(X_train, columns=feature_names)
+    df_train["label"] = y_train
+
+    df_test = pd.DataFrame(X_test, columns=feature_names)
+    df_test["label"] = y_test
+
+    df_retest = pd.DataFrame(X_rm, columns=feature_names)
+    df_retest["label"] = y_rm
+
+    # 保存到 Excel
+    train_path = os.path.join(save_dir, "eyelink_train.csv")
+    test_path = os.path.join(save_dir, "eyelink_test.csv")
+    retest_path = os.path.join(save_dir, "eyelink_retest.csv")
+
+    df_train.to_csv(train_path, index=False)
+    df_test.to_csv(test_path, index=False)
+    df_retest.to_csv(retest_path, index=False)
+
+
+    print("📌 数据已保存：")
+    print(train_path)
+    print(test_path)
+    print(retest_path)
