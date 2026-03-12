@@ -17,7 +17,9 @@ def depression_label(row):
         return 0
 
 
-def split_data(data_source='overlap_depression', random_seed=42, test_size=0.15):
+def split_data(data_source='overlap_depression',
+               demographic_separation=False,
+               random_seed=42, test_size=0.15):
     """
     Split eye-tracking features and clinical scale scores into train/test sets
 
@@ -100,7 +102,20 @@ def split_data(data_source='overlap_depression', random_seed=42, test_size=0.15)
 
     # Extract features (excluding subject ID column)
     cleaned_feature_df = features.drop(["subj"], axis=1)
+    # if demographic_separation:
+    #     # only keep age and gender
+    #     demo_cols = ['age', 'gender']
+    #     feature_cols = [col for col in demo_cols if col in features.columns]
+    #     print("feature keep: ", feature_cols)
+    #     cleaned_feature_df = features[feature_cols]
+
+    if demographic_separation:
+        exclude_cols = ['age', 'gender']
+        cleaned_feature_df = cleaned_feature_df.drop(columns=exclude_cols, errors='ignore')
+        print("feature removed: ", exclude_cols)
+
     X = cleaned_feature_df.values
+    print("feature shape: ", X.shape)
     feature_names = cleaned_feature_df.columns.tolist()
 
     # Stratified split to maintain class distribution
@@ -116,7 +131,9 @@ def split_data(data_source='overlap_depression', random_seed=42, test_size=0.15)
     return X_train, X_test, y_train, y_test, feature_names
 
 
-def compute_feature_label_correlations(data_source='overlap_depression', random_seed=42, test_size=0.15):
+def compute_feature_label_correlations(data_source='overlap_depression',
+                                       demographic_separation=False,
+                                       random_seed=42, test_size=0.15):
     """
     Compute point-biserial correlation between each feature and the selected label.
 
@@ -158,6 +175,13 @@ def compute_feature_label_correlations(data_source='overlap_depression', random_
     # Drop non-feature columns
     feature_cols = [col for col in features.columns if col not in ['subj', 'label']]
     X_df = features[feature_cols]
+
+    if demographic_separation:
+        # only keep age and gender
+        demo_cols = ['age', 'gender']
+        feature_cols = [col for col in demo_cols if col in features.columns]
+        print("keep ", feature_cols)
+        X_df = features[feature_cols]
 
     # Compute correlations
     correlations = []

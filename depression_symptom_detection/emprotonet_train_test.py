@@ -1,6 +1,7 @@
 # encoding=utf-8
 import json
 import os
+import sys
 import warnings
 
 import numpy as np
@@ -11,6 +12,7 @@ from sklearn.feature_selection import SelectKBest, f_classif
 from sklearn.metrics import roc_auc_score, accuracy_score, recall_score, matthews_corrcoef, precision_score, f1_score
 from sklearn.preprocessing import StandardScaler
 from torch.utils.data import Dataset, DataLoader, random_split
+
 import data_reader
 
 warnings.filterwarnings("ignore")
@@ -92,7 +94,8 @@ def train_and_evaluate(params, gpu_id):
     np.random.seed(42)
 
     # Load data
-    X_train_raw, X_test_raw, y_train, y_test, feature_names = data_reader.split_data(test_size=0.15)
+    X_train_raw, X_test_raw, y_train, y_test, feature_names = data_reader.split_data(
+        demographic_separation=params['demographic_separation'], test_size=0.15)
 
     # # Scaling
     # scaler = StandardScaler()
@@ -283,7 +286,15 @@ def train_and_evaluate(params, gpu_id):
 
 
 if __name__ == "__main__":
+    print(sys.argv)
+    if len(sys.argv) >= 2:
+        flag = sys.argv[1] == "--demographic_separation"
+    else:
+        flag = False
+    print(flag)
+
     params = {
+        "demographic_separation": flag,
         "n_feature_keep": 120,
         "lr": 0.001,
         "num_prototypes": 4,
@@ -304,10 +315,11 @@ if __name__ == "__main__":
     }
     root_dir = os.path.dirname(os.path.abspath(__file__))
     params['train_result_dir'] = str(
-        os.path.join(root_dir, 'results', 'train', 'overlap_depression', '42', 'emprotonet'))
+        os.path.join(root_dir, 'results', 'train', 'overlap_depression', '42', 'emprotonet'
+        if not flag else 'emprotonet_demographic_separation'))
     params['test_result_dir'] = str(
         os.path.join(root_dir, 'results', 'test', 'overlap_depression', '42',
-                     'emprotonet'))
+                     'emprotonet' if not flag else 'emprotonet_demographic_separation'))
     os.makedirs(params['train_result_dir'], exist_ok=True)
     os.makedirs(params['test_result_dir'], exist_ok=True)
     print(train_and_evaluate(params, 0))

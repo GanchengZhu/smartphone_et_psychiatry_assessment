@@ -152,42 +152,26 @@ python extract_features.py
 ### 3. Model training
 
 ```bash
-python train.py --classifier svm
-python train.py --classifier lr
-python train.py --classifier knn
-python train.py --classifier nb
-python train.py --classifier dtree
-python train.py --classifier bagging
-python train.py --classifier rf
-python train.py --classifier catboost
-python test.py --classifier svm
-python test.py --classifier lr
-python test.py --classifier knn
-python test.py --classifier nb
-python test.py --classifier dtree
-python test.py --classifier bagging
-python test.py --classifier rf
-python test.py --classifier catboost
-
-
-
+python train_test.py --classifier svm
+python train_test.py --classifier lr
+python train_test.py --classifier knn
+python train_test.py --classifier nb
+python train_test.py --classifier dtree
+python train_test.py --classifier bagging
+python train_test.py --classifier rf
+python train_test.py --classifier catboost
 ```
 
----
-
-### Model testing
-
+only use demographic features
 ```bash
-python test.py --classifier svm
-python test.py --classifier lr
-python test.py --classifier knn
-python test.py --classifier nb
-python test.py --classifier dtree
-python test.py --classifier bagging
-python test.py --classifier rf
-python test.py --classifier catboost
-
-
+python train_test.py --classifier svm --demographic_separation
+python train_test.py --classifier lr --demographic_separation
+python train_test.py --classifier knn --demographic_separation
+python train_test.py --classifier nb --demographic_separation
+python train_test.py --classifier dtree --demographic_separation
+python train_test.py --classifier bagging --demographic_separation
+python train_test.py --classifier rf --demographic_separation
+python train_test.py --classifier catboost --demographic_separation
 ```
 
 ---

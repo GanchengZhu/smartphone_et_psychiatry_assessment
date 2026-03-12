@@ -65,7 +65,12 @@ def setup_logger(log_dir: Path, mode: str = "train"):
 
 def train(X, y, args, logger):
     script_dir = Path(__file__).resolve().parent
-    output_path = script_dir / 'results' / 'train' / args.data_source / str(args.random_seed) / args.classifier
+    output_path = script_dir / 'results' / 'train' / args.data_source / str(args.random_seed)
+    if args.demographic_separation:
+        output_path /= args.classifier + '_demographic_separation'
+    else:
+        output_path /= args.classifier
+
     output_path.mkdir(parents=True, exist_ok=True)
 
     X = StandardScaler().fit_transform(X)
@@ -233,7 +238,11 @@ def apply_feature_selection(X_train, X_test, feature_selection_info, logger):
 
 def test(train_X, train_y, test_X, test_y, feature_names, args, logger):
     script_dir = Path(__file__).resolve().parent
-    output_path = script_dir / 'results' / 'test' / args.data_source / str(args.random_seed) / args.classifier
+    output_path = script_dir / 'results' / 'test' / args.data_source / str(args.random_seed)
+    if args.demographic_separation:
+        output_path /= args.classifier + '_demographic_separation'
+    else:
+        output_path /= args.classifier
     output_path.mkdir(parents=True, exist_ok=True)
 
     sd = StandardScaler()
@@ -359,6 +368,7 @@ def main():
                         choices=['selectkbest', 'selectpercentile', 'rfe', 'rfecv', 'selectfrommodel', 'variance'])
     parser.add_argument('--n_features', type=str, default='auto')
     parser.add_argument('--test_only', action='store_true')
+    parser.add_argument('--demographic_separation', action='store_true')
 
     args = parser.parse_args()
 
@@ -382,7 +392,8 @@ def main():
     X_train, X_test, y_train, y_test, feature_names = data_reader.split_data(
         data_source=args.data_source,
         random_seed=args.random_seed,
-        test_size=args.test_size
+        test_size=args.test_size,
+        demographic_separation=args.demographic_separation,
     )
 
     train_logger.info(f"X_train shape: {X_train.shape}, y_train shape: {y_train.shape}")
